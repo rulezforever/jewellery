@@ -1,7 +1,7 @@
 {
-  "name": "smartdevice",
+  "name": "jewellery",
   "version": "1.0.0",
-  "description": "smartdevice",
+  "description": "jewellery",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.0.2",
