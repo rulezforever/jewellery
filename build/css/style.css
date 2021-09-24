@@ -186,7 +186,117 @@ img {
   margin: 0 auto; }
 
 .page-footer {
-  flex: 0 0 auto; }
+  flex: 0 0 auto;
+  background-color: black;
+  min-height: 338px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  color: white; }
+
+.page-footer__wrapper {
+  display: flex;
+  flex-wrap: wrap; }
+
+.page-footer__subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 92px;
+  margin-right: 6.5vw; }
+
+.page-footer__title {
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 700;
+  font-family: "Cormorant Garamond", "PT Serif", serif;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 10px; }
+
+.page-footer__slogan {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #9b9997;
+  margin: 0;
+  margin-bottom: 32px; }
+
+.page-footer__form input {
+  background-color: transparent;
+  width: 29vw;
+  border: none;
+  outline: none;
+  padding: 11px 0;
+  color: white; }
+  .page-footer__form input::placeholder {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    font-family: "Poppins", "Arial", sans-serif;
+    color: #9b9997; }
+
+.page-footer__link {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  padding: 11px 0;
+  padding-right: 45px;
+  position: relative; }
+  .page-footer__link::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/icons/pointer.svg");
+    background-repeat: no-repeat;
+    width: 29px;
+    height: 9px;
+    top: 20px;
+    right: 5px; }
+
+.page-footer__form-container {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid white; }
+
+.page-footer__order-list,
+.page-footer__about-list,
+.page-footer__social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.page-footer__item a,
+.page-footer__link {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  color: white; }
+  .page-footer__item a:hover, .page-footer__item a:focus,
+  .page-footer__link:hover,
+  .page-footer__link:focus {
+    opacity: 0.7; }
+
+.page-footer__order-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 100px;
+  margin-right: 5.2vw; }
+
+.page-footer__about-list {
+  padding-top: 100px;
+  margin-right: 7.3vw; }
+
+.page-footer__social-list {
+  padding-top: 100px; }
+
+.page-footer__item {
+  margin-bottom: 21px; }
+
+.page-footer__social-list .page-footer__item a {
+  padding-left: 8px; }
 
 .button {
   font-size: 14px;
@@ -499,3 +609,6 @@ img {
   color: #1d1613; }
   .modal__text a:hover, .modal__text a:focus {
     opacity: 0.7; }
+
+.social__link-icon {
+  margin-right: 12px; }

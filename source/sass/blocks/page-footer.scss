@@ -1,3 +1,120 @@
 .page-footer {
   flex: 0 0 auto;
+  background-color: $black;
+  min-height: 338px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  color: $white;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-footer__subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 92px;
+  margin-right: 6.5vw;
+}
+
+.page-footer__title {
+  @include font-set(34px, 44px, 700);
+  font-family: $secondary-font;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.page-footer__slogan {
+  @include font-set(16px, 21px, 400);
+  color: $brown;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.page-footer__form input {
+  background-color: transparent;
+  width: 29vw;
+  border: none;
+  outline: none;
+  padding: 11px 0;
+  color: $white;
+
+  &::placeholder {
+    @include font-set(14px, 21px, 500);
+    font-family: $primary-font;
+    color: $brown;
+  }
+}
+
+.page-footer__link {
+  @include font-set(16px, 21px, 500);
+  padding: 11px 0;
+  padding-right: 45px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/icons/pointer.svg");
+    background-repeat: no-repeat;
+    width: 29px;
+    height: 9px;
+    top: 20px;
+    right: 5px;
+  }
+}
+
+.page-footer__form-container {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $white;
+}
+
+.page-footer__order-list,
+.page-footer__about-list,
+.page-footer__social-list {
+  @include list-reset;
+}
+
+.page-footer__item a,
+.page-footer__link {
+  @include font-set(16px, 21px, 500);
+  color: $white;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.page-footer__order-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 100px;
+  margin-right: 5.2vw;
+}
+
+.page-footer__about-list {
+  padding-top: 100px;
+  margin-right: 7.3vw;
+}
+
+.page-footer__social-list {
+  padding-top: 100px;
+}
+
+.page-footer__item {
+  margin-bottom: 21px;
+}
+
+.page-footer__social-list .page-footer__item a {
+  padding-left: 8px;
 }
