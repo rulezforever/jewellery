@@ -1,0 +1,163 @@
+.modal {
+  position: fixed;
+  top: 137px;
+  right: -16px;
+  left: 0;
+  margin: auto;
+  padding: 0;
+  background-color: $background-basic;
+  // color: $white;
+  width: 430px;
+  height: 586px;
+  max-width: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+  display: none;
+  z-index: 3;
+  border: none;
+  overflow: auto;
+
+  @media (max-width: $tablet-width) {
+    width: 442px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 270px;
+    height: 470px;
+  }
+
+  &--opened {
+    display: block;
+  }
+}
+
+.modal fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal__form-wrapper,
+.modal__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.modal__title {
+  @include font-set(34px, 44px, 700);
+  font-family: $secondary-font;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.modal__form {
+  padding: 0 45px;
+}
+
+.modal__form input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid $black2;
+  background-color: transparent;
+  box-sizing: border-box;
+  padding: 13px 0;
+
+  &:not(:nth-of-type(1)) {
+    margin-top: 22px;
+  }
+
+  &::placeholder {
+    @include font-set(14px, 21px, 500);
+    font-family: $primary-font;
+    color: $brown;
+  }
+}
+
+.modal__link {
+  @include font-set(12px, 18px, 500);
+  font-family: $primary-font;
+  color: $brown;
+  text-align: end;
+  margin-top: 5px;
+  margin-bottom: 45px;
+
+  &:hover,
+  &:focus {
+    color: $black2;
+  }
+}
+
+.modal__close {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  top: 8px;
+  right: 0;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    &::before,
+    &::after {
+      background-color: $brown;
+    }
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 18px;
+    width: 18px;
+    height: 2px;
+    background-color: $black2;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.modal__image {
+  margin-bottom: 46px;
+}
+
+
+.modal__button {
+  @include font-set(16px, 21px, 500);
+  color: $white;
+  width: 340px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  background-color: $background2;
+  padding: 23px 0;
+  border: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.modal__text {
+  @include font-set(14px, 21px, 500);
+  color: $brown;
+  margin-left: 53px;
+}
+
+.modal__text a {
+  margin-left: 8px;
+  color: $black2;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}

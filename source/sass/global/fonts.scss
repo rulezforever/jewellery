@@ -16,6 +16,22 @@
 
 @font-face {
   font-family: "Cormorant Garamond";
+  src: url("../fonts/cormorantGaramond-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("../fonts/cormorantGaramond-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
   src: url("../fonts/cormorantGaramond-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;

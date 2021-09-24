@@ -6,6 +6,7 @@
   margin: 0 auto;
   height: 100%;
   position: relative;
+  font-family: $primary-font;
 }
 
 .page-wrapper {
@@ -26,4 +27,11 @@
   height: 100%;
   width: 100%;
   background-color: $black-opacity;
+}
+
+.index-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  margin: 0 auto;
 }

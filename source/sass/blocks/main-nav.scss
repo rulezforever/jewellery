@@ -1,0 +1,138 @@
+// .main-nav {
+
+// }
+
+.main-nav__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid $grey;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.main-nav__container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 115px;
+  align-items: center;
+}
+
+.main-nav__list,
+.main-nav__list-about {
+  @include list-reset;
+}
+
+.main-nav__form {
+  position: relative;
+  margin-left: 30px;
+  margin-right: 26vw;
+  background-color: transparent;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -28px;
+    background-image: url("../../img/icons/glass.svg");
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.main-nav__form input {
+  outline: none;
+  border: none;
+  width: 170px;
+  padding-bottom: 11px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &::placeholder {
+    @include font-set(14px, 21px, 500);
+    font-family: $primary-font;
+  }
+}
+
+.main-nav__toggle {
+  position: relative;
+  display: none;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  width: 25px;
+  height: 16px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: $black2;
+    box-shadow: 0 6px 0 0 $black2, 0 12px 0 0 $black2;
+  }
+}
+
+.main-nav__logo {
+  padding-top: 10px;
+  // margin-right: 10.6vw;
+}
+
+.main-nav__login,
+.main-nav__cart {
+  @include font-set(14px, 21px, 500);
+  color: $black2;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.main-nav__login-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40.6vw;
+  gap: 2.6vw;
+  justify-content: flex-end;
+}
+
+.main-nav__login {
+  padding-bottom: 5px;
+}
+
+.main-nav__cart {
+  padding-bottom: 5px;
+}
+
+.main-nav__cart span {
+  padding-left: 5px;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  min-height: 39px;
+}
+
+.main-nav__item a {
+  @include font-set(16px, 24px, 500);
+  color: $black2;
+}
+
+.main-nav__list-about {
+  display: none;
+}
+
+.main-nav__log {
+  display: none;
+}
