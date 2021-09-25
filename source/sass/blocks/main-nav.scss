@@ -1,6 +1,8 @@
-// .main-nav {
-
-// }
+.main-nav {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+}
 
 .main-nav__wrapper {
   display: flex;
@@ -10,6 +12,12 @@
   border-bottom: 1px solid $grey;
   margin: 0 auto;
   margin-bottom: 20px;
+
+  @media (max-width: $tablet-width) {
+    border: none;
+    margin-bottom: 0;
+    padding-top: 22px;
+  }
 }
 
 .main-nav__container {
@@ -17,6 +25,11 @@
   flex-wrap: wrap;
   min-height: 115px;
   align-items: center;
+
+  @media (max-width: $tablet-width) {
+    min-height: 126px;
+    padding: 0 6vw;
+  }
 }
 
 .main-nav__list,
@@ -30,15 +43,10 @@
   margin-right: 26vw;
   background-color: transparent;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: -28px;
-    background-image: url("../../img/icons/glass.svg");
-    background-repeat: no-repeat;
-    width: 14px;
-    height: 14px;
+  @media (max-width: $tablet-width) {
+    // display: none;
+    order: 1;
+    margin: 0;
   }
 }
 
@@ -56,6 +64,20 @@
   &::placeholder {
     @include font-set(14px, 21px, 500);
     font-family: $primary-font;
+
+    @media (max-width: $tablet-width) {
+      opacity: 0;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    background: $white-opacity;
+    border-radius: 21px;
+    width: 89vw;
+    height: 40px;
+    margin-top: 34px;
+    text-indent: 40px;
+    padding-top: 12px;
   }
 }
 
@@ -64,9 +86,15 @@
   display: none;
   outline: none;
   border: none;
+  cursor: pointer;
   background-color: transparent;
   width: 25px;
   height: 16px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
 
   &::before {
     content: "";
@@ -75,14 +103,18 @@
     left: 0;
     width: 25px;
     height: 2px;
-    background-color: $black2;
-    box-shadow: 0 6px 0 0 $black2, 0 12px 0 0 $black2;
+    background-color: $white;
+    box-shadow: 0 8px 0 0 $white, 0 16px 0 0 $white;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    margin-right: 37vw;
   }
 }
 
 .main-nav__logo {
   padding-top: 10px;
-  // margin-right: 10.6vw;
 }
 
 .main-nav__login,
@@ -102,14 +134,58 @@
   width: 40.6vw;
   gap: 2.6vw;
   justify-content: flex-end;
+
+  @media (max-width: $tablet-width) {
+    width: 40vw;
+  }
 }
 
 .main-nav__login {
   padding-bottom: 5px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__cart {
   padding-bottom: 5px;
+}
+
+.main-nav__cart-text {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__cart-icon {
+  display: none;
+  stroke: $black2;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    stroke: $white;
+    padding-top: 6px;
+  }
+}
+
+.main-nav__form-icon {
+  fill: $black2;
+
+  @media (max-width: $tablet-width) {
+    fill: $white;
+    position: absolute;
+    top: 47px;
+    left: 15px;
+  }
+}
+
+.main-nav__logo-icon {
+  fill: $background2;
+
+  @media (max-width: $tablet-width) {
+    fill: $white;
+  }
 }
 
 .main-nav__cart span {
@@ -122,17 +198,68 @@
   justify-content: center;
   gap: 35px;
   min-height: 39px;
+
+  @media (max-width: $tablet-width) {
+    // display: none;
+    flex-direction: column;
+    gap: 21px;
+    padding-left: 45px;
+    margin-bottom: 40px;
+  }
 }
 
 .main-nav__item a {
   @include font-set(16px, 24px, 500);
   color: $black2;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  @media (max-width: $tablet-width) {
+    color: $white;
+  }
+}
+
+.main-nav__list .main-nav__item a {
+  @media (max-width: $tablet-width) {
+    @include font-set(24px, 36px, 500);
+  }
+}
+
+.main-nav__list-about .main-nav__item a {
+  @media (max-width: $tablet-width) {
+    @include font-set(18px, 23px, 500);
+    color: $white-opacity2;
+  }
 }
 
 .main-nav__list-about {
   display: none;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 45px;
+    margin-bottom: 45px;
+  }
 }
 
 .main-nav__log {
   display: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  @media (max-width: $tablet-width) {
+    @include font-set(18px, 23px, 500);
+    display: block;
+    color: $white;
+    padding-left: 45px;
+  }
 }

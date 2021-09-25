@@ -185,6 +185,11 @@ img {
   padding: 50px;
   margin: 0 auto; }
 
+@media (max-width: 1023px) {
+  .page-header {
+    background-color: #a87b62;
+    min-height: 778px; } }
+
 .page-footer {
   flex: 0 0 auto;
   background-color: black;
@@ -312,6 +317,10 @@ img {
   border: 1px solid #a87b62;
   cursor: pointer; }
 
+@media (max-width: 1023px) {
+  .main-nav {
+    margin-bottom: 45px; } }
+
 .main-nav__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -320,12 +329,21 @@ img {
   border-bottom: 1px solid #f6f5f4;
   margin: 0 auto;
   margin-bottom: 20px; }
+  @media (max-width: 1023px) {
+    .main-nav__wrapper {
+      border: none;
+      margin-bottom: 0;
+      padding-top: 22px; } }
 
 .main-nav__container {
   display: flex;
   flex-wrap: wrap;
   min-height: 115px;
   align-items: center; }
+  @media (max-width: 1023px) {
+    .main-nav__container {
+      min-height: 126px;
+      padding: 0 6vw; } }
 
 .main-nav__list,
 .main-nav__list-about {
@@ -338,15 +356,10 @@ img {
   margin-left: 30px;
   margin-right: 26vw;
   background-color: transparent; }
-  .main-nav__form::before {
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: -28px;
-    background-image: url("../../img/icons/glass.svg");
-    background-repeat: no-repeat;
-    width: 14px;
-    height: 14px; }
+  @media (max-width: 1023px) {
+    .main-nav__form {
+      order: 1;
+      margin: 0; } }
 
 .main-nav__form input {
   outline: none;
@@ -360,15 +373,30 @@ img {
     line-height: 21px;
     font-weight: 500;
     font-family: "Poppins", "Arial", sans-serif; }
+    @media (max-width: 1023px) {
+      .main-nav__form input::placeholder {
+        opacity: 0; } }
+  @media (max-width: 1023px) {
+    .main-nav__form input {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 21px;
+      width: 89vw;
+      height: 40px;
+      margin-top: 34px;
+      text-indent: 40px;
+      padding-top: 12px; } }
 
 .main-nav__toggle {
   position: relative;
   display: none;
   outline: none;
   border: none;
+  cursor: pointer;
   background-color: transparent;
   width: 25px;
   height: 16px; }
+  .main-nav__toggle:hover, .main-nav__toggle:focus {
+    opacity: 0.7; }
   .main-nav__toggle::before {
     content: "";
     position: absolute;
@@ -376,8 +404,12 @@ img {
     left: 0;
     width: 25px;
     height: 2px;
-    background-color: #1d1613;
-    box-shadow: 0 6px 0 0 #1d1613, 0 12px 0 0 #1d1613; }
+    background-color: white;
+    box-shadow: 0 8px 0 0 white, 0 16px 0 0 white; }
+  @media (max-width: 1023px) {
+    .main-nav__toggle {
+      display: block;
+      margin-right: 37vw; } }
 
 .main-nav__logo {
   padding-top: 10px; }
@@ -399,12 +431,46 @@ img {
   width: 40.6vw;
   gap: 2.6vw;
   justify-content: flex-end; }
+  @media (max-width: 1023px) {
+    .main-nav__login-section {
+      width: 40vw; } }
 
 .main-nav__login {
   padding-bottom: 5px; }
+  @media (max-width: 1023px) {
+    .main-nav__login {
+      display: none; } }
 
 .main-nav__cart {
   padding-bottom: 5px; }
+
+@media (max-width: 1023px) {
+  .main-nav__cart-text {
+    display: none; } }
+
+.main-nav__cart-icon {
+  display: none;
+  stroke: #1d1613; }
+  @media (max-width: 1023px) {
+    .main-nav__cart-icon {
+      display: block;
+      stroke: white;
+      padding-top: 6px; } }
+
+.main-nav__form-icon {
+  fill: #1d1613; }
+  @media (max-width: 1023px) {
+    .main-nav__form-icon {
+      fill: white;
+      position: absolute;
+      top: 47px;
+      left: 15px; } }
+
+.main-nav__logo-icon {
+  fill: #a87b62; }
+  @media (max-width: 1023px) {
+    .main-nav__logo-icon {
+      fill: white; } }
 
 .main-nav__cart span {
   padding-left: 5px; }
@@ -415,18 +481,60 @@ img {
   justify-content: center;
   gap: 35px;
   min-height: 39px; }
+  @media (max-width: 1023px) {
+    .main-nav__list {
+      flex-direction: column;
+      gap: 21px;
+      padding-left: 45px;
+      margin-bottom: 40px; } }
 
 .main-nav__item a {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
   color: #1d1613; }
+  .main-nav__item a:hover, .main-nav__item a:focus {
+    opacity: 0.7; }
+  @media (max-width: 1023px) {
+    .main-nav__item a {
+      color: white; } }
+
+@media (max-width: 1023px) {
+  .main-nav__list .main-nav__item a {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500; } }
+
+@media (max-width: 1023px) {
+  .main-nav__list-about .main-nav__item a {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.75); } }
 
 .main-nav__list-about {
   display: none; }
+  @media (max-width: 1023px) {
+    .main-nav__list-about {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 20px;
+      padding-left: 45px;
+      margin-bottom: 45px; } }
 
 .main-nav__log {
   display: none; }
+  .main-nav__log:hover, .main-nav__log:focus {
+    opacity: 0.7; }
+  @media (max-width: 1023px) {
+    .main-nav__log {
+      font-size: 18px;
+      line-height: 23px;
+      font-weight: 500;
+      display: block;
+      color: white;
+      padding-left: 45px; } }
 
 .wrapper {
   padding: 0;
@@ -455,6 +563,22 @@ img {
     .promo {
       background: url("../../img/intro-desktop@2x.jpg");
       background-size: cover; } }
+  @media (max-width: 1023px) {
+    .promo {
+      background: url("../../img/intro-tablet@1x.jpg");
+      background-size: cover; } }
+  @media (max-width: 1023px) and (min-resolution: 2dppx) {
+    .promo {
+      background: url("../../img/intro-tablet@2x.jpg");
+      background-size: cover; } }
+  @media (max-width: 767px) {
+    .promo {
+      background: url("../../img/intro-mobile@1x.jpg");
+      background-size: cover; } }
+  @media (max-width: 767px) and (min-resolution: 2dppx) {
+    .promo {
+      background: url("../../img/intro-mobile@2x.jpg");
+      background-size: cover; } }
 
 .promo__title {
   font-size: 45px;
@@ -466,6 +590,9 @@ img {
   letter-spacing: 0.03em;
   color: white;
   margin: 0; }
+  @media (max-width: 1023px) {
+    .promo__title {
+      margin-right: 17px; } }
 
 .promo__slogan {
   font-size: 38px;
@@ -478,6 +605,9 @@ img {
   color: white;
   margin: 0;
   width: 80vw; }
+  @media (max-width: 1023px) {
+    .promo__slogan {
+      margin-right: 17px; } }
 
 .modal {
   position: fixed;

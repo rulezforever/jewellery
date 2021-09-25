@@ -13,6 +13,26 @@
     background: url("../../img/intro-desktop@2x.jpg");
     background-size: cover;
   }
+
+  @media (max-width: $tablet-width) {
+    background: url("../../img/intro-tablet@1x.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/intro-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    background: url("../../img/intro-mobile@1x.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/intro-mobile@2x.jpg");
+      background-size: cover;
+    }
+  }
 }
 
 .promo__title {
@@ -23,6 +43,10 @@
   letter-spacing: 0.03em;
   color: $white;
   margin: 0;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 17px;
+  }
 }
 
 .promo__slogan {
@@ -34,4 +58,8 @@
   color: $white;
   margin: 0;
   width: 80vw;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 17px;
+  }
 }
