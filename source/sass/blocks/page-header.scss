@@ -1,6 +1,17 @@
 .page-header {
   @media (max-width: $tablet-width) {
-    background-color: $background2;
-    min-height: 778px;
+    // background-color: $background2;
+    // min-height: 778px;
   }
+}
+
+.page-header--closed .main-nav__container {
+  padding-top: 0;
+}
+
+.page-header-closed .main-nav__list,
+.page-header--closed .main-nav__list-about,
+.page-header--closed .main-nav__log,
+.page-header--closed .main-nav__form {
+  display: none;
 }
