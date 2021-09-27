@@ -25,6 +25,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    padding-top: 190px;
     background: url("../../img/intro-mobile@1x.jpg");
     background-size: cover;
 
@@ -47,6 +48,11 @@
   @media (max-width: $tablet-width) {
     margin-right: 17px;
   }
+
+  @media (max-width: $mobile-width) {
+    @include font-set(38px, 49.4px, 700);
+    margin-right: 0;
+  }
 }
 
 .promo__slogan {
@@ -61,5 +67,10 @@
 
   @media (max-width: $tablet-width) {
     margin-right: 17px;
+  }
+
+  @media (max-width: $mobile-width) {
+    @include font-set(34px, 44px, 400);
+    margin-right: 0;
   }
 }
