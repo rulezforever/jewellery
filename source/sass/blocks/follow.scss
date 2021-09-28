@@ -1,0 +1,269 @@
+.follow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  box-sizing: border-box;
+  padding-left: 20px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+  }
+}
+
+.follow__title {
+  @include font-set(34px, 44px, 700);
+  font-family: $secondary-font;
+  letter-spacing: 0.03em;
+  align-self: center;
+}
+
+.follow__link {
+  @include font-set(16px, 21px, 500);
+  align-self: center;
+  color: $black2;
+  padding-bottom: 7px;
+  border-bottom: 1px solid $background2;
+  width: 75px;
+  margin-bottom: 58px;
+}
+
+.follow__list {
+  @include list-reset;
+  display: grid;
+  row-gap: 34px;
+  column-gap: 27px;
+  grid-template-columns: 17vw 29vw 17vw 17vw;
+  grid-template-rows: 17vw 11vw;
+  grid-template-areas: "pic1 pic3 pic4 pic6"
+    "pic2 pic3 pic5 pic7";
+
+  @media (max-width: $tablet-width) {
+    row-gap: 16px;
+    column-gap: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 42vw 42vw;
+    grid-template-rows: 41vw 28vw 27vw;
+    grid-template-areas: "pic1 pic3"
+      "pic2 pic3"
+      "pic5 pic7";
+    row-gap: 27px;
+    column-gap: 24px;
+  }
+}
+
+.follow__pic1 {
+  grid-area: pic1;
+  background: url("../../img/pic1-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../../img/pic1-desktop@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (max-width: $tablet-width) {
+    background: url("../../img/pic1-tablet@1x.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/pic1-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    background: url("../../img/pic1-mobile@1x.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/pic1-mobile@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
+
+.follow__pic2 {
+  grid-area: pic2;
+  background: url("../../img/pic2-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../../img/pic2-desktop@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (max-width: $tablet-width) {
+    background: url("../../img/pic2-tablet@1x.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/pic2-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    background: url("../../img/pic2-mobile@1x.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/pic2-mobile@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
+
+.follow__pic3 {
+  grid-area: pic3;
+  background: url("../../img/pic3-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../../img/pic3-desktop@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (max-width: $tablet-width) {
+    background: url("../../img/pic3-tablet@1x.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/pic3-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    background: url("../../img/pic3-mobile@1x.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/pic3-mobile@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
+
+.follow__pic4 {
+  grid-area: pic4;
+  background: url("../../img/pic4-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../../img/pic4-desktop@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (max-width: $tablet-width) {
+    background: url("../../img/pic4-tablet@1x.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/pic4-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.follow__pic5 {
+  grid-area: pic5;
+  background: url("../../img/pic5-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  @media (min-resolution: 2dppx) {
+    background: url("../../img/pic5-desktop@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (max-width: $tablet-width) {
+    background: url("../../img/pic5-tablet@1x.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/pic5-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    background: url("../../img/pic5-mobile@1x.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/pic5-mobile@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
+
+.follow__pic6 {
+  grid-area: pic6;
+  background: url("../../img/pic6-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../../img/pic6-desktop@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (max-width: $tablet-width) {
+    background: url("../../img/pic6-tablet@1x.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/pic6-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.follow__pic7 {
+  grid-area: pic7;
+  background: url("../../img/pic7-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../../img/pic7-desktop@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (max-width: $tablet-width) {
+    background: url("../../img/pic7-tablet@1x.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/pic7-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    background: url("../../img/pic7-mobile@1x.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/pic7-mobile@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
