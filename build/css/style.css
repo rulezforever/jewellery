@@ -179,12 +179,6 @@ img {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8); }
 
-.index-wrapper {
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-  margin: 0 auto; }
-
 .page-header--closed .main-nav__container {
   padding-top: 0; }
 
@@ -210,7 +204,8 @@ img {
 
 .page-footer__wrapper {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding-left: 20px; }
   @media (max-width: 1023px) {
     .page-footer__wrapper {
       padding-left: 45px; } }
@@ -729,7 +724,8 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  margin-bottom: 90px; }
+  margin-bottom: 90px;
+  margin-left: 20px; }
   @media (max-width: 1023px) {
     .blog {
       margin-bottom: 45px; } }
@@ -1029,7 +1025,8 @@ img {
   background: url("../../img/intro-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 463px; }
+  min-height: 463px;
+  margin-bottom: 120px; }
   @media (min-resolution: 2dppx) {
     .promo {
       background: url("../../img/intro-desktop@2x.jpg");
@@ -1092,6 +1089,136 @@ img {
       line-height: 44px;
       font-weight: 400;
       margin-right: 0; } }
+
+.new {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 115px;
+  padding-left: 19px; }
+  @media (max-width: 1023px) {
+    .new {
+      margin-bottom: 45px; } }
+  @media (max-width: 767px) {
+    .new {
+      margin-bottom: 30px; } }
+
+.new__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center; }
+
+.new__title {
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 700;
+  font-family: "Cormorant Garamond", "PT Serif", serif;
+  letter-spacing: 0.03em;
+  align-self: center;
+  margin: 0;
+  margin-bottom: 6px; }
+
+.new__link {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  align-self: center;
+  color: #1d1613;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #a87b62;
+  margin: 0;
+  margin-bottom: 50px; }
+  .new__link:hover, .new__link:focus {
+    opacity: 0.7; }
+
+.new__buttons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 18px; }
+
+.new__button {
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative; }
+  .new__button--left::before, .new__button--right::before {
+    content: "";
+    position: absolute;
+    width: 29px;
+    height: 1px;
+    background-color: #a87b62;
+    top: 0;
+    left: 0; }
+  .new__button--left::after, .new__button--right::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid #a87b62;
+    border-right: 1px solid #a87b62;
+    top: -5px;
+    left: 0;
+    transform: rotate(-225deg); }
+  .new__button--right::after {
+    transform: rotate(310deg);
+    right: 0;
+    left: 18px; }
+
+.new__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 50px; }
+
+.new__item a {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.new__img {
+  margin-bottom: 20px; }
+
+.new__item-name {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 5px; }
+
+.new__item-price {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  margin: 0; }
+
+.new__pagination-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; }
+
+.new__pagination-item {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  color: #9b9997; }
+  .new__pagination-item--current {
+    color: #1d1613; }
+  .new__pagination-item:nth-of-type(4), .new__pagination-item:nth-of-type(5), .new__pagination-item:nth-of-type(6) {
+    display: none; }
 
 .modal {
   position: fixed;
@@ -1241,7 +1368,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-left: 12px; }
+  padding-left: 12px;
+  margin-bottom: 80px; }
   @media (max-width: 1023px) {
     .faq {
       padding-left: 0;
@@ -1390,7 +1518,8 @@ img {
   flex-direction: column;
   align-content: center;
   box-sizing: border-box;
-  padding-left: 20px; }
+  padding-left: 20px;
+  margin-bottom: 125px; }
   @media (max-width: 1023px) {
     .follow {
       padding-left: 0;
