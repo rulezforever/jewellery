@@ -119,7 +119,11 @@
 
 .faq__item {
   box-sizing: border-box;
-  padding: 43px;
+  padding: 39px;
+
+  @media (max-width: $tablet-width) {
+    padding: 43px;
+  }
 
   @media (max-width: $mobile-width) {
     cursor: pointer;
