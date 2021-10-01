@@ -1017,6 +1017,58 @@ img {
       width: auto;
       padding: 0 0; } }
 
+.all {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 95px;
+  padding-left: 20px;
+  background: url("../../img/all-jewellery-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 261px; }
+  @media (min-resolution: 2dppx) {
+    .all {
+      background: url("../../img/all-jewellery-desktop@2x.jpg");
+      background-size: cover; } }
+  @media (max-width: 1023px) {
+    .all {
+      background: url("../../img/all-jewellery-tablet@1x.jpg");
+      background-size: cover; } }
+  @media (max-width: 1023px) and (min-resolution: 2dppx) {
+    .all {
+      background: url("../../img/all-jewellery-tablet@2x.jpg");
+      background-size: cover; } }
+  @media (max-width: 767px) {
+    .all {
+      background: url("../../img/all-jewellery-mobile@1x.jpg");
+      background-size: cover; } }
+  @media (max-width: 767px) and (min-resolution: 2dppx) {
+    .all {
+      background: url("../../img/all-jewellery-mobile@2x.jpg");
+      background-size: cover; } }
+
+.all__title {
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 700;
+  font-family: "Cormorant Garamond", "PT Serif", serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  margin: 0; }
+
+.all__slogan {
+  font-size: 22px;
+  line-height: 29px;
+  font-weight: 500;
+  font-family: "Cormorant Garamond", "PT Serif", serif;
+  font-style: italic;
+  text-align: center;
+  color: white;
+  margin: 0; }
+
 .promo {
   display: flex;
   flex-wrap: wrap;
@@ -1236,7 +1288,8 @@ img {
   line-height: 21px;
   font-weight: 500;
   margin: 0;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  color: #1d1613; }
   @media (max-width: 767px) {
     .new__item-name {
       width: 40vw;
@@ -1246,7 +1299,8 @@ img {
   font-size: 14px;
   line-height: 18px;
   font-weight: 700;
-  margin: 0; }
+  margin: 0;
+  color: #1d1613; }
 
 .new__pagination-list {
   list-style: none;

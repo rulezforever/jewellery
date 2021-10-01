@@ -175,6 +175,7 @@
   @include font-set(16px, 21px, 500);
   margin: 0;
   margin-bottom: 5px;
+  color: $black2;
 
   @media (max-width: $mobile-width) {
     width: 40vw;
@@ -185,6 +186,7 @@
 .new__item-price {
   @include font-set(14px, 18px, 700);
   margin: 0;
+  color: $black2;
 }
 
 .new__pagination-list {
