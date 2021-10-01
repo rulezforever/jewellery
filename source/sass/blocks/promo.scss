@@ -18,6 +18,7 @@
   @media (max-width: $tablet-width) {
     background: url("../../img/intro-tablet@1x.jpg");
     background-size: cover;
+    margin-bottom: 70px;
 
     @media (min-resolution: 2dppx) {
       background: url("../../img/intro-tablet@2x.jpg");
@@ -27,6 +28,7 @@
 
   @media (max-width: $mobile-width) {
     padding-top: 190px;
+    margin-bottom: 60px;
     background: url("../../img/intro-mobile@1x.jpg");
     background-size: cover;
 
@@ -73,5 +75,6 @@
   @media (max-width: $mobile-width) {
     @include font-set(34px, 44px, 400);
     margin-right: 0;
+    transform: translateY(-8px);
   }
 }
