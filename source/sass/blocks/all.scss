@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 261px;
-  // margin-bottom: 120px;
+  margin-bottom: 80px;
 
   @media (min-resolution: 2dppx) {
     background: url("../../img/all-jewellery-desktop@2x.jpg");
@@ -19,7 +19,8 @@
   @media (max-width: $tablet-width) {
     background: url("../../img/all-jewellery-tablet@1x.jpg");
     background-size: cover;
-    // margin-bottom: 70px;
+    margin-bottom: 52px;
+    padding-left: 0;
 
     @media (min-resolution: 2dppx) {
       background: url("../../img/all-jewellery-tablet@2x.jpg");
@@ -28,8 +29,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    // padding-top: 190px;
-    // margin-bottom: 60px;
+    padding-top: 80px;
+    margin-bottom: 40px;
     background: url("../../img/all-jewellery-mobile@1x.jpg");
     background-size: cover;
 
@@ -66,4 +67,9 @@
   text-align: center;
   color: $white;
   margin: 0;
+
+  @media (max-width: $mobile-width) {
+    width: 92vw;
+    padding-left: 12px;
+  }
 }

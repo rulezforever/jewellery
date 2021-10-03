@@ -55,8 +55,6 @@ questionFourth.addEventListener('click', function() {
   itemFourth.classList.toggle('faq__item--nojs');
 });
 
-
-
 })();
 
 
