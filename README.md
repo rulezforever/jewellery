@@ -1,4 +1,4 @@
-# smartDevice
+# jewellery
 
 
 npm install - установка проекта
