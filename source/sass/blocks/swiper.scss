@@ -1,0 +1,10 @@
+.swiper {
+  width: 88vw;
+  height: 404px;
+}
+
+.swiper__card {
+  &:not(:nth-of-type(4)) {
+    margin-right: 30px;
+  }
+}

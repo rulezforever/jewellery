@@ -18,6 +18,8 @@
   <link rel="preload" href="fonts/cormorantGaramond-Regular.woff" as="font" crossorigin>
   <link rel="preload" href="fonts/cormorantGaramond-Italic.woff2" as="font" crossorigin>
   <link rel="preload" href="fonts/cormorantGaramond-Italic.woff" as="font" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
 
 <body class="page-body">
@@ -98,80 +100,93 @@
             <button type="button" class="new__button new__button--right" aria-label="Button right"></button>
           </div>
           <a href="#" class="new__link">Shop now</a>
-          <ul class="new__list">
-            <li class="new__item">
-              <a href="#">
-              <picture>
-                <source media="(max-width: 767px)" type="image/webp"
-                  srcset="img/purple-mobile@1x.webp 1x, img/purple-mobile@2x.webp 2x">
-                <!-- retina: 103kB; non-retina: 36kB  -->
-                <source media="(max-width: 767px)" type="image/jpg"
-                  srcset="img/purple-mobile@1x.jpg 1x, img/purple-mobile@2x.jpg 2x">
-                <source media="(max-width: 1023px)" type="image/webp"
-                  srcset="img/purple-tablet@1x.webp 1x, img/purple-tablet@2x.webp 2x">
-                <!-- retina: 183kB; non-retina: 69kB  -->
-                <source media="(max-width: 1023px)" type="image/jpg"
-                  srcset="img/purple-tablet@1x.jpg 1x, img/purple-tablet@2x.jpg 2x">
-                <source type="image/webp"
-                  srcset="img/purple-desktop@1x.webp 1x, img/purple-desktop@2x.webp 2x">
-                <!-- retina: 193kB; non-retina: 82kB  -->
-                <img src="img/purple-desktop@1x.jpg" srcset="img/purple-desktop@2x.jpg 2x" width="270"
-                  height="284" class="new__img" alt="Necklace with amethyst">
-              </picture>
-              <p class="new__item-name">Necklace with amethyst</p>
-              <p class="new__item-price">$ 145</p>
-            </a>
-            </li>
-            <li class="new__item">
-              <a href="#">
-              <picture>
-                <source media="(max-width: 767px)" type="image/webp"
-                  srcset="img/choker-necklace-mobile@1x.webp 1x, img/choker-necklace-mobile@2x.webp 2x">
-                <!-- retina: 103kB; non-retina: 36kB  -->
-                <source media="(max-width: 767px)" type="image/jpg"
-                  srcset="img/choker-necklace-mobile@1x.jpg 1x, img/choker-necklace-mobile@2x.jpg 2x">
-                <source media="(max-width: 1023px)" type="image/webp"
-                  srcset="img/choker-necklace-tablet@1x.webp 1x, img/choker-necklace-tablet@2x.webp 2x">
-                <!-- retina: 183kB; non-retina: 69kB  -->
-                <source media="(max-width: 1023px)" type="image/jpg"
-                  srcset="img/choker-necklace-tablet@1x.jpg 1x, img/choker-necklace-tablet@2x.jpg 2x">
-                <source type="image/webp"
-                  srcset="img/choker-necklace-desktop@1x.webp 1x, img/choker-necklace-desktop@2x.webp 2x">
-                <!-- retina: 193kB; non-retina: 82kB  -->
-                <img src="img/choker-necklace-desktop@1x.jpg" srcset="img/choker-necklace-desktop@2x.jpg 2x" width="270"
-                  height="284" class="new__img" alt="Layered сhoker">
-              </picture>
-              <p class="new__item-name">Layered сhoker</p>
-              <p class="new__item-price">$ 115</p>
-            </a>
-            </li>
-            <li class="new__item">
-              <a href="#">
-              <picture>
-                <source type="image/webp"
-                  srcset="img/dainty-gold-necklace-desktop@1x.webp 1x, img/dainty-gold-necklace-desktop@2x.webp 2x">
-                <!-- retina: 193kB; non-retina: 82kB  -->
-                <img src="img/dainty-gold-necklace-desktop@1x.jpg" srcset="img/dainty-gold-necklace-desktop@2x.jpg 2x" width="270"
-                  height="284" class="new__img" alt="Gold chain">
-              </picture>
-              <p class="new__item-name">Gold chain</p>
-              <p class="new__item-price">$ 215</p>
-            </a>
-            </li>
-            <li class="new__item">
-              <a href="#">
-              <picture>
-                <source type="image/webp"
-                  srcset="img/galaxy-earrings-desktop@1x.webp 1x, img/galaxy-earrings-desktop@2x.webp 2x">
-                <!-- retina: 193kB; non-retina: 82kB  -->
-                <img src="img/galaxy-earrings-desktop@1x.jpg" srcset="img/galaxy-earrings-desktop@2x.jpg 2x" width="270"
-                  height="284" class="new__img" alt="Galaxy earrings">
-              </picture>
-              <p class="new__item-name">Galaxy earrings</p>
-              <p class="new__item-price">$ 95</p>
-            </a>
-            </li>
-          </ul>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide-wrapper">
+                <div class="new__item swiper__card">
+                  <a href="#">
+                  <picture>
+                    <source media="(max-width: 767px)" type="image/webp"
+                      srcset="img/purple-mobile@1x.webp 1x, img/purple-mobile@2x.webp 2x">
+                    <!-- retina: 103kB; non-retina: 36kB  -->
+                    <source media="(max-width: 767px)" type="image/jpg"
+                      srcset="img/purple-mobile@1x.jpg 1x, img/purple-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" type="image/webp"
+                      srcset="img/purple-tablet@1x.webp 1x, img/purple-tablet@2x.webp 2x">
+                    <!-- retina: 183kB; non-retina: 69kB  -->
+                    <source media="(max-width: 1023px)" type="image/jpg"
+                      srcset="img/purple-tablet@1x.jpg 1x, img/purple-tablet@2x.jpg 2x">
+                    <source type="image/webp"
+                      srcset="img/purple-desktop@1x.webp 1x, img/purple-desktop@2x.webp 2x">
+                    <!-- retina: 193kB; non-retina: 82kB  -->
+                    <img src="img/purple-desktop@1x.jpg" srcset="img/purple-desktop@2x.jpg 2x" width="270"
+                      height="284" class="new__img" alt="Necklace with amethyst">
+                  </picture>
+                  <p class="new__item-name">Necklace with amethyst</p>
+                  <p class="new__item-price">$ 145</p>
+                </a>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-wrapper">
+                <div class="new__item swiper__card">
+                <a href="#">
+                <picture>
+                  <source media="(max-width: 767px)" type="image/webp"
+                    srcset="img/choker-necklace-mobile@1x.webp 1x, img/choker-necklace-mobile@2x.webp 2x">
+                  <!-- retina: 103kB; non-retina: 36kB  -->
+                  <source media="(max-width: 767px)" type="image/jpg"
+                    srcset="img/choker-necklace-mobile@1x.jpg 1x, img/choker-necklace-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" type="image/webp"
+                    srcset="img/choker-necklace-tablet@1x.webp 1x, img/choker-necklace-tablet@2x.webp 2x">
+                  <!-- retina: 183kB; non-retina: 69kB  -->
+                  <source media="(max-width: 1023px)" type="image/jpg"
+                    srcset="img/choker-necklace-tablet@1x.jpg 1x, img/choker-necklace-tablet@2x.jpg 2x">
+                  <source type="image/webp"
+                    srcset="img/choker-necklace-desktop@1x.webp 1x, img/choker-necklace-desktop@2x.webp 2x">
+                  <!-- retina: 193kB; non-retina: 82kB  -->
+                  <img src="img/choker-necklace-desktop@1x.jpg" srcset="img/choker-necklace-desktop@2x.jpg 2x" width="270"
+                    height="284" class="new__img" alt="Layered сhoker">
+                  </picture>
+                  <p class="new__item-name">Layered сhoker</p>
+                  <p class="new__item-price">$ 115</p>
+                </a>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-wrapper">
+                <div class="new__item swiper__card">
+                  <a href="#">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="img/dainty-gold-necklace-desktop@1x.webp 1x, img/dainty-gold-necklace-desktop@2x.webp 2x">
+                    <!-- retina: 193kB; non-retina: 82kB  -->
+                    <img src="img/dainty-gold-necklace-desktop@1x.jpg" srcset="img/dainty-gold-necklace-desktop@2x.jpg 2x" width="270"
+                      height="284" class="new__img" alt="Gold chain">
+                  </picture>
+                  <p class="new__item-name">Gold chain</p>
+                  <p class="new__item-price">$ 215</p>
+                </a>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-wrapper">
+                <div class="new__item swiper__card">
+                <a href="#">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/galaxy-earrings-desktop@1x.webp 1x, img/galaxy-earrings-desktop@2x.webp 2x">
+                  <!-- retina: 193kB; non-retina: 82kB  -->
+                  <img src="img/galaxy-earrings-desktop@1x.jpg" srcset="img/galaxy-earrings-desktop@2x.jpg 2x" width="270"
+                    height="284" class="new__img" alt="Galaxy earrings">
+                </picture>
+                <p class="new__item-name">Galaxy earrings</p>
+                <p class="new__item-price">$ 95</p>
+              </a>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-wrapper">slide5</div>
+              <div class="swiper-slide swiper-slide-wrapper">slide6</div>
+            </div>
+      </div>
+
           <ul class="new__pagination-list">
             <li class="new__pagination-item new__pagination-item--current"><a href="">1</a></li>
             <li class="new__pagination-item"><a href="">2</a></li>

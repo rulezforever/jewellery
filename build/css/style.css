@@ -177,7 +177,8 @@ img {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8); }
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2; }
 
 .page-body__overlay--view {
   display: block; }
@@ -2307,3 +2308,10 @@ img {
 .catalog__form-item--opened .catalog__btn::before,
 .catalog__form-item--nojs .catalog__btn::before {
   transform: rotate(135deg); }
+
+.swiper {
+  width: 88vw;
+  height: 404px; }
+
+.swiper__card:not(:nth-of-type(4)) {
+  margin-right: 30px; }
