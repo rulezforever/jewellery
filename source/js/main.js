@@ -12,8 +12,6 @@
     navMain.classList.toggle('main-nav--opened');
   });
 
-  // ------------ faq menu------------------------
-
   // ------------mobile menu---------------
 
 const itemFirst = document.querySelector('.faq__item--first');
@@ -53,6 +51,56 @@ questionThird.addEventListener('click', function() {
 questionFourth.addEventListener('click', function() {
   itemFourth.classList.toggle('faq__item--opened');
   itemFourth.classList.toggle('faq__item--nojs');
+});
+
+// ---------------modal log in-----------------------
+
+const login = document.querySelector('.main-nav__login');
+const  modalLogin = document.querySelector('.modal__login');
+const overlay = document.querySelector('.page-body__overlay');
+const pageBody = document.querySelector('.page-body');
+const modalLoginClose = document.querySelector('.modal__close');
+const emailInput = document.getElementById('your_email');
+
+var isStorageSupport = true;
+
+try {
+  storage = localStorage.getItem('your_email');
+} catch (err) {
+  isStorageSupport = false;
+}
+
+login.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  overlay.classList.add('page-body__overlay--view');
+  modalLogin.classList.add('modal__login--opened');
+  emailInput.focus();
+  if (modalLogin.classList.contains('modal--opened')) {
+    pageBody.style.overflow = "hidden";
+  } else {
+    pageBody.style.overflow = "auto";
+  }
+});
+
+const modalCloseHandler =(evt) => {
+  evt.preventDefault();
+  overlay.classList.remove('page-body__overlay--view');
+  modalLogin.classList.remove('modal__login--opened');
+  pageBody.style.overflow = "auto";
+}
+
+modalLoginClose.addEventListener('click', modalCloseHandler);
+overlay.addEventListener('click', modalCloseHandler);
+
+window.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    if (modalLogin.classList.contains('modal__login--opened')) {
+      evt.preventDefault();
+      modalLogin.classList.remove('modal__login--opened');
+      overlay.classList.remove('page-body__overlay--view');
+      pageBody.style.overflow = "auto";
+    }
+  }
 });
 
 })();

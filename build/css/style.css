@@ -179,6 +179,9 @@ img {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8); }
 
+.page-body__overlay--view {
+  display: block; }
+
 .page-header--closed .main-nav__container {
   padding-top: 0; }
 
@@ -1483,11 +1486,10 @@ img {
     opacity: 0.7; }
 
 .modal__filter {
-  position: fixed;
-  top: -5px;
-  left: -370px;
+  position: absolute;
+  top: 0;
+  left: 0;
   margin: auto;
-  padding: 30px;
   width: 458px;
   max-width: 100%;
   max-height: 100%;
@@ -1500,7 +1502,7 @@ img {
     display: block; }
 
 .modal__filter-wrapper {
-  width: 442px; }
+  padding: 15px 0; }
 
 .modal__filter-close {
   border: none;
@@ -1514,11 +1516,48 @@ img {
   .modal__filter-close::before {
     content: "";
     position: absolute;
-    top: 15px;
-    right: -10px;
+    top: 0;
+    right: 0;
     width: 32px;
     height: 32px;
     background: url("../../img/icons/close.svg"); }
+
+.modal__filter .catalog__section-name {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 500; }
+
+.modal__filter .catalog__section-label {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500; }
+
+.modal__filter .catalog__form-list {
+  border: none; }
+
+.modal__filter .catalog__section {
+  padding: 33px; }
+
+.modal__filter .catalog__section-list {
+  gap: 17px;
+  margin-bottom: 37px;
+  padding-left: 35px; }
+
+.modal__login--opened {
+  display: block; }
+
+.modal-page {
+  margin: auto;
+  padding: 0;
+  background-color: #f0eae4;
+  width: 430px;
+  height: 586px;
+  max-width: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+  border: none;
+  overflow: auto; }
 
 .social__link-icon {
   margin-right: 12px; }

@@ -97,10 +97,13 @@ modalpriceSection.addEventListener('click', function() {
 
 //----------------------------modal filter--------------------------
 
+
+
 const filter = document.querySelector('.catalog__filter-button');
 const  modalFilter = document.querySelector('.modal__filter');
 const overlay = document.querySelector('.page-body__overlay');
 const pageBody = document.querySelector('.page-body');
+const modalFilterClose = document.querySelector('.modal__filter-close');
 
 filter.addEventListener('click', function() {
   overlay.classList.add('page-body__overlay--view');
@@ -113,29 +116,25 @@ filter.addEventListener('click', function() {
   }
 });
 
+const modalCloseHandler =(evt) => {
+  evt.preventDefault();
+  overlay.classList.remove('page-body__overlay--view');
+  modalFilter.classList.remove('modal__filter--opened');
+  pageBody.style.overflow = "auto";
+}
 
-// const modalClose = document.querySelector('.modal__filter-close');
+modalFilterClose.addEventListener('click', modalCloseHandler);
+overlay.addEventListener('click', modalCloseHandler);
 
-// const modalCloseHandler =(evt) => {
-//   evt.preventDefault();
-//   overlay.classList.remove('page-body__overlay--view');
-//   modalDialog.classList.remove('modal--opened');
-//   pageBody.style.overflow = "auto";
-// }
-
-// modalClose.addEventListener('click', modalCloseHandler);
-// overlay.addEventListener('click', modalCloseHandler);
-
-// window.addEventListener('keydown', function (evt) {
-//   if (evt.keyCode === 27) {
-//     if (modal.classList.contains('modal--opened')) {
-//       evt.preventDefault();
-//       modal.classList.remove('modal--opened');
-//       overlay.classList.remove('page-body__overlay--view');
-//       pageBody.style.overflow = "auto";
-//     }
-//   }
-// });
-
+window.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    if (modalFilter.classList.contains('modal__filter--opened')) {
+      evt.preventDefault();
+      modalFilter.classList.remove('modal__filter--opened');
+      overlay.classList.remove('page-body__overlay--view');
+      pageBody.style.overflow = "auto";
+    }
+  }
+});
 
 })();

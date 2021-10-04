@@ -42,8 +42,8 @@
                   <use xlink:href="img/svg-sprite.svg#logo-mobile"></use>
                 </svg>
               </a>
-              <div class=" main-nav__login-section">
-                <a href="#" class="main-nav__login">Login</a>
+              <div class="main-nav__login-section">
+                <a href="login.html" class="main-nav__login">Login</a>
                 <a href="#" class="main-nav__cart">
                   <svg class="main-nav__cart-icon" width="20" height="18">
                     <use xlink:href="img/svg-sprite.svg#cart"></use>
@@ -335,7 +335,7 @@
     </footer>
   </div>
 
-  <dialog id="modal" class="modal">
+  <dialog id="modal" class="modal modal__login">
     <div class="modal__wrapper">
       <picture>
         <source media="(max-width: 767px)" type="image/webp"
@@ -365,7 +365,7 @@
           </div>
         </fieldset>
       </form>
-      <button class="modal__close" tabindex="0" type="button" id="close" aria-label="Закрыть"></button>
+      <button class="modal__close" tabindex="0" type="button" id="close" aria-label="Close"></button>
     </div>
   </dialog>
   <div class="page-body__overlay"></div>

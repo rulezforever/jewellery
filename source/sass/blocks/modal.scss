@@ -162,12 +162,12 @@
 }
 
 .modal__filter {
-  position: fixed;
-  top: -5px;
+  position: absolute;
+  top: 0;
   // right: -16px;
-  left: -370px;
+  left: 0;
   margin: auto;
-  padding: 30px;
+  // padding: 40px;
   width: 458px;
   max-width: 100%;
   max-height: 100%;
@@ -183,7 +183,9 @@
 }
 
 .modal__filter-wrapper {
-  width: 442px;
+  // width: 442px;
+  padding: 15px 0;
+  // border: 1px solid red;
 }
 
 .modal__filter-close {
@@ -202,33 +204,56 @@
     }
   }
 
-  // &::before,
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 30px;
-  //   right: 20px;
-  //   width: 22px;
-  //   height: 1px;
-  //   background-color: $white;
-  // }
-
-  // &::before {
-  //   transform: rotate(45deg);
-  //   box-shadow: none;
-  // }
-
-  // &::after {
-  //   transform: rotate(-45deg);
-  // }
-
   &::before {
     content: "";
     position: absolute;
-    top: 15px;
-    right: -10px;
+    top: 0;
+    right: 0;
     width: 32px;
     height: 32px;
     background: url("../../img/icons/close.svg");
   }
+}
+
+.modal__filter .catalog__section-name {
+  @include font-set(18px, 23px, 500);
+}
+
+.modal__filter .catalog__section-label {
+  @include font-set(16px, 21px, 500);
+}
+
+.modal__filter .catalog__form-list {
+  border: none;
+}
+
+.modal__filter .catalog__section {
+  padding: 33px;
+}
+
+.modal__filter .catalog__section-list {
+  gap: 17px;
+  margin-bottom: 37px;
+  padding-left: 35px;
+}
+
+.modal__login {
+  &--opened {
+    display: block;
+  }
+}
+
+.modal-page {
+  margin: auto;
+  padding: 0;
+  background-color: $background-basic;
+  width: 430px;
+  height: 586px;
+  max-width: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+  // display: none;
+  z-index: 3;
+  border: none;
+  overflow: auto;
 }
