@@ -207,7 +207,7 @@
   }
 }
 
-.modal__filter {
+.modal-filter {
   position: fixed;
   top: 0;
   left: 0;
@@ -241,11 +241,11 @@
   }
 }
 
-.modal__filter-wrapper {
+.modal-filter-wrapper {
   padding-bottom: 10px;
 }
 
-.modal__filter-close {
+.modal-filter-close {
   border: none;
   outline: none;
   background-color: transparent;
@@ -278,7 +278,7 @@
 }
 
 
-.modal__filter .modal__filter-wrapper {
+.modal-filter .modal-filter-wrapper {
   width: 442px;
 
   @media (max-width: $mobile-width) {
@@ -286,20 +286,20 @@
   }
 }
 
-.modal__filter .catalog__section-name {
+.modal-filter .catalog__section-name {
   @include font-set(18px, 23px, 500);
 }
 
-.modal__filter .catalog__section-label {
+.modal-filter .catalog__section-label {
   @include font-set(16px, 21px, 500);
 }
 
-.modal__filter .catalog__form-list {
+.modal-filter .catalog__form-list {
   border: none;
   margin-bottom: 25px;
 }
 
-.modal__filter .catalog__section {
+.modal-filter .catalog__section {
   padding: 35px 22px;
 
   @media (max-width: $mobile-width) {
@@ -307,7 +307,7 @@
   }
 }
 
-.modal__filter .catalog__form-controls {
+.modal-filter .catalog__form-controls {
   padding-left: 40px;
 
   @media (max-width: $mobile-width) {
@@ -316,7 +316,7 @@
   }
 }
 
-.modal__filter .catalog__form-scale {
+.modal-filter .catalog__form-scale {
   width: 305px;
 
   @media (max-width: $mobile-width) {
@@ -325,12 +325,12 @@
   }
 }
 
-.modal__filter .catalog__form-toggle {
+.modal-filter .catalog__form-toggle {
   width: 18px;
   height: 18px;
 }
 
-.modal__filter .catalog__form-toggle-min {
+.modal-filter .catalog__form-toggle-min {
   top: -10px;
   left: 85px;
 
@@ -340,7 +340,7 @@
   }
 }
 
-.modal__filter .catalog__form-toggle-max {
+.modal-filter .catalog__form-toggle-max {
   top: -10px;
   left: 260px;
 
@@ -350,11 +350,11 @@
   }
 }
 
-.modal__filter .catalog__form-price p {
+.modal-filter .catalog__form-price p {
   @include font-set(16px, 21px, 500);
 }
 
-.modal__filter .catalog__form-price {
+.modal-filter .catalog__form-price {
   width: 215px;
   padding-left: 36px;
 
@@ -364,11 +364,11 @@
   }
 }
 
-.modal__filter .catalog__form-filter {
+.modal-filter .catalog__form-filter {
   margin-bottom: 45px;
 }
 
-.modal__filter .catalog__form-button-block {
+.modal-filter .catalog__form-button-block {
   padding-left: 31px;
   width: 362px;
 
@@ -379,7 +379,7 @@
   }
 }
 
-.modal__filter .catalog__section-list {
+.modal-filter .catalog__section-list {
   gap: 17px;
   margin-bottom: 26px;
   padding-left: 35px;
@@ -389,7 +389,7 @@
   }
 }
 
-.modal__filter .catalog__btn {
+.modal-filter .catalog__btn {
   &::before {
     @media (max-width: $mobile-width) {
       top: 5px;
@@ -398,7 +398,7 @@
   }
 }
 
-.modal__login {
+.modal-login {
   &--opened {
     display: block;
   }

@@ -57,7 +57,7 @@ questionFourth.addEventListener('click', function() {
 
 const login = document.querySelector('.main-nav__login');
 const loginMobile = document.querySelector('.main-nav__log');
-const  modalLogin = document.querySelector('.modal__login');
+const  modalLogin = document.querySelector('.modal-login');
 const overlay = document.querySelector('.page-body__overlay');
 const pageBody = document.querySelector('.page-body');
 const modalLoginClose = document.querySelector('.modal__close');
@@ -74,9 +74,9 @@ try {
 login.addEventListener('click', function(evt) {
   evt.preventDefault();
   overlay.classList.add('page-body__overlay--view');
-  modalLogin.classList.add('modal__login--opened');
+  modalLogin.classList.add('modal-login--opened');
   emailInput.focus();
-  if (modalLogin.classList.contains('modal__login--opened')) {
+  if (modalLogin.classList.contains('modal-login--opened')) {
     pageBody.style.overflow = "hidden";
   } else {
     pageBody.style.overflow = "auto";
@@ -86,9 +86,9 @@ login.addEventListener('click', function(evt) {
 loginMobile.addEventListener('click', function(evt) {
   evt.preventDefault();
   overlay.classList.add('page-body__overlay--view');
-  modalLogin.classList.add('modal__login--opened');
+  modalLogin.classList.add('modal-login--opened');
   emailInput.focus();
-  if (modalLogin.classList.contains('modal__login--opened')) {
+  if (modalLogin.classList.contains('modal-login--opened')) {
     pageBody.style.overflow = "hidden";
   } else {
     pageBody.style.overflow = "auto";
@@ -98,7 +98,7 @@ loginMobile.addEventListener('click', function(evt) {
 const modalCloseHandler =(evt) => {
   evt.preventDefault();
   overlay.classList.remove('page-body__overlay--view');
-  modalLogin.classList.remove('modal__login--opened');
+  modalLogin.classList.remove('modal-login--opened');
   pageBody.style.overflow = "auto";
 }
 
@@ -107,9 +107,9 @@ overlay.addEventListener('click', modalCloseHandler);
 
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
-    if (modalLogin.classList.contains('modal__login--opened')) {
+    if (modalLogin.classList.contains('modal-login--opened')) {
       evt.preventDefault();
-      modalLogin.classList.remove('modal__login--opened');
+      modalLogin.classList.remove('modal-login--opened');
       overlay.classList.remove('page-body__overlay--view');
       pageBody.style.overflow = "auto";
     }

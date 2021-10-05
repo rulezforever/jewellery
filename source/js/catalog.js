@@ -54,7 +54,7 @@ priceSection.addEventListener('click', function() {
 
 // --------modal form-------------
 
-const modalDialog = document.querySelector('.modal__filter');
+const modalDialog = document.querySelector('.modal-filter');
 const modalitemProduct = modalDialog.querySelector('.catalog__form-item--product');
 const modalproductSection = modalDialog.querySelector('.catalog__section--product');
 const modalitemMaterial = modalDialog.querySelector('.catalog__form-item--material');
@@ -100,16 +100,16 @@ modalpriceSection.addEventListener('click', function() {
 
 
 const filter = document.querySelector('.catalog__filter-button');
-const  modalFilter = document.querySelector('.modal__filter');
+const  modalFilter = document.querySelector('.modal-filter');
 const overlay = document.querySelector('.page-body__overlay');
 const pageBody = document.querySelector('.page-body');
-const modalFilterClose = document.querySelector('.modal__filter-close');
+const modalFilterClose = document.querySelector('.modal-filter-close');
 
 filter.addEventListener('click', function() {
   overlay.classList.add('page-body__overlay--view');
-  modalFilter.classList.add('modal__filter--opened');
+  modalFilter.classList.add('modal-filter--opened');
 
-  if (modalFilter.classList.contains('modal__filter--opened')) {
+  if (modalFilter.classList.contains('modal-filter--opened')) {
     pageBody.style.overflow = "hidden";
   } else {
     pageBody.style.overflow = "auto";
@@ -119,8 +119,8 @@ filter.addEventListener('click', function() {
 const modalCloseHandler =(evt) => {
   evt.preventDefault();
   overlay.classList.remove('page-body__overlay--view');
-  modalFilter.classList.remove('modal__filter--opened');
-  modalLogin.classList.remove('modal__login--opened');
+  modalFilter.classList.remove('modal-filter--opened');
+  modalLogin.classList.remove('modal-login--opened');
   pageBody.style.overflow = "auto";
 }
 
@@ -129,9 +129,9 @@ overlay.addEventListener('click', modalCloseHandler);
 
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
-    if (modalFilter.classList.contains('modal__filter--opened')) {
+    if (modalFilter.classList.contains('modal-filter--opened')) {
       evt.preventDefault();
-      modalFilter.classList.remove('modal__filter--opened');
+      modalFilter.classList.remove('modal-filter--opened');
       overlay.classList.remove('page-body__overlay--view');
       pageBody.style.overflow = "auto";
     }
@@ -142,7 +142,7 @@ window.addEventListener('keydown', function (evt) {
 
 const login = document.querySelector('.main-nav__login');
 const loginMobile = document.querySelector('.main-nav__log');
-const  modalLogin = document.querySelector('.modal__login');
+const  modalLogin = document.querySelector('.modal-login');
 const modalLoginClose = document.querySelector('.modal__close');
 const emailInput = document.getElementById('your_email');
 
@@ -157,9 +157,9 @@ try {
 login.addEventListener('click', function(evt) {
   evt.preventDefault();
   overlay.classList.add('page-body__overlay--view');
-  modalLogin.classList.add('modal__login--opened');
+  modalLogin.classList.add('modal-login--opened');
   emailInput.focus();
-  if (modalLogin.classList.contains('modal__login--opened')) {
+  if (modalLogin.classList.contains('modal-login--opened')) {
     pageBody.style.overflow = "hidden";
   } else {
     pageBody.style.overflow = "auto";
@@ -169,9 +169,9 @@ login.addEventListener('click', function(evt) {
 loginMobile.addEventListener('click', function(evt) {
   evt.preventDefault();
   overlay.classList.add('page-body__overlay--view');
-  modalLogin.classList.add('modal__login--opened');
+  modalLogin.classList.add('modal-login--opened');
   emailInput.focus();
-  if (modalLogin.classList.contains('modal__login--opened')) {
+  if (modalLogin.classList.contains('modal-login--opened')) {
     pageBody.style.overflow = "hidden";
   } else {
     pageBody.style.overflow = "auto";
@@ -183,9 +183,9 @@ overlay.addEventListener('click', modalCloseHandler);
 
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
-    if (modalLogin.classList.contains('modal__login--opened')) {
+    if (modalLogin.classList.contains('modal-login--opened')) {
       evt.preventDefault();
-      modalLogin.classList.remove('modal__login--opened');
+      modalLogin.classList.remove('modal-login--opened');
       overlay.classList.remove('page-body__overlay--view');
       pageBody.style.overflow = "auto";
     }
