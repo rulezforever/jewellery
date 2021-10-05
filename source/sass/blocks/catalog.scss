@@ -237,6 +237,11 @@
   background-color: $background2;
   color: $white;
   border: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
 }
 
 .catalog__form-button-clear {
@@ -246,6 +251,11 @@
   background-color: $white;
   color: $black;
   border: 1px solid $background2;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
 }
 
 .catalog__form-price {
@@ -372,4 +382,3 @@
     transform: rotate(135deg);
   }
 }
-

@@ -56,6 +56,7 @@ questionFourth.addEventListener('click', function() {
 // ---------------modal log in-----------------------
 
 const login = document.querySelector('.main-nav__login');
+const loginMobile = document.querySelector('.main-nav__log');
 const  modalLogin = document.querySelector('.modal__login');
 const overlay = document.querySelector('.page-body__overlay');
 const pageBody = document.querySelector('.page-body');
@@ -75,7 +76,19 @@ login.addEventListener('click', function(evt) {
   overlay.classList.add('page-body__overlay--view');
   modalLogin.classList.add('modal__login--opened');
   emailInput.focus();
-  if (modalLogin.classList.contains('modal--opened')) {
+  if (modalLogin.classList.contains('modal__login--opened')) {
+    pageBody.style.overflow = "hidden";
+  } else {
+    pageBody.style.overflow = "auto";
+  }
+});
+
+loginMobile.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  overlay.classList.add('page-body__overlay--view');
+  modalLogin.classList.add('modal__login--opened');
+  emailInput.focus();
+  if (modalLogin.classList.contains('modal__login--opened')) {
     pageBody.style.overflow = "hidden";
   } else {
     pageBody.style.overflow = "auto";
@@ -111,17 +124,12 @@ const swiper = new Swiper('.swiper', {
   breakpoints: {
         320: {
                 slidesPerView: 2,
-                // spaceBetween: 30
+                spaceBetween: 30
               },
         1024: {
           slidesPerView: 4,
-          // spaceBetween: 30
         }
       },
-  // If we need pagination
-  // pagination: {
-  //   el: '.swiper-pagination',
-  // },
 
   navigation: {
     nextEl: '.new__button--left',
@@ -131,5 +139,3 @@ const swiper = new Swiper('.swiper', {
 
 
 })();
-
-

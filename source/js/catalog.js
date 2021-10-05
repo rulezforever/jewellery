@@ -109,7 +109,7 @@ filter.addEventListener('click', function() {
   overlay.classList.add('page-body__overlay--view');
   modalFilter.classList.add('modal__filter--opened');
 
-  if (modalFilter.classList.contains('modal--opened')) {
+  if (modalFilter.classList.contains('modal__filter--opened')) {
     pageBody.style.overflow = "hidden";
   } else {
     pageBody.style.overflow = "auto";
@@ -120,6 +120,7 @@ const modalCloseHandler =(evt) => {
   evt.preventDefault();
   overlay.classList.remove('page-body__overlay--view');
   modalFilter.classList.remove('modal__filter--opened');
+  modalLogin.classList.remove('modal__login--opened');
   pageBody.style.overflow = "auto";
 }
 
@@ -131,6 +132,60 @@ window.addEventListener('keydown', function (evt) {
     if (modalFilter.classList.contains('modal__filter--opened')) {
       evt.preventDefault();
       modalFilter.classList.remove('modal__filter--opened');
+      overlay.classList.remove('page-body__overlay--view');
+      pageBody.style.overflow = "auto";
+    }
+  }
+});
+
+// ---------------modal log in-----------------------
+
+const login = document.querySelector('.main-nav__login');
+const loginMobile = document.querySelector('.main-nav__log');
+const  modalLogin = document.querySelector('.modal__login');
+const modalLoginClose = document.querySelector('.modal__close');
+const emailInput = document.getElementById('your_email');
+
+var isStorageSupport = true;
+
+try {
+  storage = localStorage.getItem('your_email');
+} catch (err) {
+  isStorageSupport = false;
+}
+
+login.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  overlay.classList.add('page-body__overlay--view');
+  modalLogin.classList.add('modal__login--opened');
+  emailInput.focus();
+  if (modalLogin.classList.contains('modal__login--opened')) {
+    pageBody.style.overflow = "hidden";
+  } else {
+    pageBody.style.overflow = "auto";
+  }
+});
+
+loginMobile.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  overlay.classList.add('page-body__overlay--view');
+  modalLogin.classList.add('modal__login--opened');
+  emailInput.focus();
+  if (modalLogin.classList.contains('modal__login--opened')) {
+    pageBody.style.overflow = "hidden";
+  } else {
+    pageBody.style.overflow = "auto";
+  }
+});
+
+modalLoginClose.addEventListener('click', modalCloseHandler);
+overlay.addEventListener('click', modalCloseHandler);
+
+window.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    if (modalLogin.classList.contains('modal__login--opened')) {
+      evt.preventDefault();
+      modalLogin.classList.remove('modal__login--opened');
       overlay.classList.remove('page-body__overlay--view');
       pageBody.style.overflow = "auto";
     }
