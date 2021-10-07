@@ -110,9 +110,9 @@ filter.addEventListener('click', function() {
   modalFilter.classList.add('modal-filter--opened');
 
   if (modalFilter.classList.contains('modal-filter--opened')) {
-    pageBody.style.overflow = "hidden";
+    pageBody.style.overflow = 'hidden';
   } else {
-    pageBody.style.overflow = "auto";
+    pageBody.style.overflow = 'auto';
   }
 });
 
@@ -121,7 +121,7 @@ const modalCloseHandler =(evt) => {
   overlay.classList.remove('page-body__overlay--view');
   modalFilter.classList.remove('modal-filter--opened');
   modalLogin.classList.remove('modal-login--opened');
-  pageBody.style.overflow = "auto";
+  pageBody.style.overflow = 'auto';
 }
 
 modalFilterClose.addEventListener('click', modalCloseHandler);
@@ -133,7 +133,7 @@ window.addEventListener('keydown', function (evt) {
       evt.preventDefault();
       modalFilter.classList.remove('modal-filter--opened');
       overlay.classList.remove('page-body__overlay--view');
-      pageBody.style.overflow = "auto";
+      pageBody.style.overflow = 'auto';
     }
   }
 });
@@ -160,9 +160,9 @@ login.addEventListener('click', function(evt) {
   modalLogin.classList.add('modal-login--opened');
   emailInput.focus();
   if (modalLogin.classList.contains('modal-login--opened')) {
-    pageBody.style.overflow = "hidden";
+    pageBody.style.overflow = 'hidden';
   } else {
-    pageBody.style.overflow = "auto";
+    pageBody.style.overflow = 'auto';
   }
 });
 
@@ -172,9 +172,9 @@ loginMobile.addEventListener('click', function(evt) {
   modalLogin.classList.add('modal-login--opened');
   emailInput.focus();
   if (modalLogin.classList.contains('modal-login--opened')) {
-    pageBody.style.overflow = "hidden";
+    pageBody.style.overflow = 'hidden';
   } else {
-    pageBody.style.overflow = "auto";
+    pageBody.style.overflow = 'auto';
   }
 });
 
@@ -187,7 +187,7 @@ window.addEventListener('keydown', function (evt) {
       evt.preventDefault();
       modalLogin.classList.remove('modal-login--opened');
       overlay.classList.remove('page-body__overlay--view');
-      pageBody.style.overflow = "auto";
+      pageBody.style.overflow = 'auto';
     }
   }
 });
