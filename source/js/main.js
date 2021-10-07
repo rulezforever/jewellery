@@ -77,9 +77,9 @@ login.addEventListener('click', function(evt) {
   modalLogin.classList.add('modal-login--opened');
   emailInput.focus();
   if (modalLogin.classList.contains('modal-login--opened')) {
-    pageBody.style.overflow = "hidden";
+    pageBody.style.overflow = 'hidden';
   } else {
-    pageBody.style.overflow = "auto";
+    pageBody.style.overflow = 'auto';
   }
 });
 
@@ -89,9 +89,9 @@ loginMobile.addEventListener('click', function(evt) {
   modalLogin.classList.add('modal-login--opened');
   emailInput.focus();
   if (modalLogin.classList.contains('modal-login--opened')) {
-    pageBody.style.overflow = "hidden";
+    pageBody.style.overflow = 'hidden';
   } else {
-    pageBody.style.overflow = "auto";
+    pageBody.style.overflow = 'auto';
   }
 });
 
@@ -99,7 +99,7 @@ const modalCloseHandler =(evt) => {
   evt.preventDefault();
   overlay.classList.remove('page-body__overlay--view');
   modalLogin.classList.remove('modal-login--opened');
-  pageBody.style.overflow = "auto";
+  pageBody.style.overflow = 'auto';
 }
 
 modalLoginClose.addEventListener('click', modalCloseHandler);
@@ -111,7 +111,7 @@ window.addEventListener('keydown', function (evt) {
       evt.preventDefault();
       modalLogin.classList.remove('modal-login--opened');
       overlay.classList.remove('page-body__overlay--view');
-      pageBody.style.overflow = "auto";
+      pageBody.style.overflow = 'auto';
     }
   }
 });

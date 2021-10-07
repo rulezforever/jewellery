@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jewellery</title>
-  <link href="css/style.min.css" rel="stylesheet">
   <link rel="preload" href="fonts/poppins-Bold.woff2" as="font" crossorigin>
   <link rel="preload" href="fonts/poppins-Bold.woff" as="font" crossorigin>
   <link rel="preload" href="fonts/poppins-Medium.woff2" as="font" crossorigin>
@@ -19,7 +18,7 @@
   <link rel="preload" href="fonts/cormorantGaramond-Italic.woff2" as="font" crossorigin>
   <link rel="preload" href="fonts/cormorantGaramond-Italic.woff" as="font" crossorigin>
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -36,7 +35,7 @@
           </form>
           <div class="main-nav__top-section">
             <button class="main-nav__toggle" type="button" aria-label="Open menu"></button>
-            <a href="#" class="main-nav__logo" aria-label="logo">
+            <a class="main-nav__logo" aria-label="logo">
               <svg class="main-nav__logo-icon" width="66" height="66">
                 <use xlink:href="img/svg-sprite.svg#logo"></use>
               </svg>
@@ -56,30 +55,30 @@
       </div>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="" href="#">What’s new</a>
+          <a href="#">What’s new</a>
         </li>
         <li class="main-nav__item">
-          <a class="" href="#">Chokers</a>
+          <a href="#">Chokers</a>
         </li>
         <li class="main-nav__item">
-          <a class="" href="#">Necklaces</a>
+          <a href="#">Necklaces</a>
         </li>
         <li class="main-nav__item">
-          <a class="" href="#">Rings</a>
+          <a href="#">Rings</a>
         </li>
         <li class="main-nav__item">
-          <a class="" href="#">Earrings</a>
+          <a href="#">Earrings</a>
         </li>
       </ul>
       <ul class="main-nav__list-about">
         <li class="main-nav__item">
-          <a class="" href="#">About CH</a>
+          <a href="#">About CH</a>
         </li>
         <li class="main-nav__item">
-          <a class="" href="#">Stores & Hours</a>
+          <a href="#">Stores & Hours</a>
         </li>
         <li class="main-nav__item">
-          <a class="" href="#">Contact Us</a>
+          <a href="#">Contact Us</a>
         </li>
       </ul>
       <a href="" class="main-nav__log">Login</a>
@@ -224,7 +223,7 @@
               <div class="blog__item-img"></div>
               <div class="blog__item-text">
                 <p class="blog__item-date">September 30, 2019</p>
-                <h3 class="blog__item-name">How to care for your jewellery</h3>
+                <h3>How to care for your jewellery</h3>
                 <a href="#" class="blog__item-link">Read Article</a>
               </div>
             </li>
@@ -232,7 +231,7 @@
               <div class="blog__item-img"></div>
               <div class="blog__item-text">
                 <p class="blog__item-date">September 23, 2019</p>
-                <h3 class="blog__item-name">Power of crystals</h3>
+                <h3>Power of crystals</h3>
                 <a href="#" class="blog__item-link">Read Article</a>
               </div>
             </li>
@@ -240,7 +239,7 @@
               <div class="blog__item-img"></div>
               <div class="blog__item-text">
                 <p class="blog__item-date">September 16, 2019</p>
-                <h3 class="blog__item-name">AW 19 trends</h3>
+                <h3>AW 19 trends</h3>
                 <a href="#" class="blog__item-link">Read Article</a>
               </div>
             </li>
@@ -397,6 +396,7 @@
     </div>
   </dialog>
   <div class="page-body__overlay"></div>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 
 </body>

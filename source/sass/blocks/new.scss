@@ -77,49 +77,49 @@
   background-color: transparent;
   cursor: pointer;
   position: relative;
+}
 
-  &--left,
-  &--right {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 29px;
-      height: 1px;
-      background-color: $background2;
-      top: 0;
-      left: 30px;
+.new__button--left,
+.new__button--right {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 29px;
+    height: 1px;
+    background-color: $background2;
+    top: 0;
+    left: 30px;
 
-      @media (max-width: $tablet-width) {
-        width: 36px;
-      }
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      border-bottom: 1px solid $background2;
-      border-right: 1px solid $background2;
-      top: -5px;
-      left: 30px;
-      transform: rotate(-225deg);
+    @media (max-width: $tablet-width) {
+      width: 36px;
     }
   }
 
-  &--right {
-    &::before {
-      left: -45px;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid $background2;
+    border-right: 1px solid $background2;
+    top: -5px;
+    left: 30px;
+    transform: rotate(-225deg);
+  }
+}
 
-      @media (max-width: $tablet-width) {
-        left: -52px;
-      }
-    }
+.new__button--right {
+  &::before {
+    left: -45px;
 
-    &::after {
-      transform: rotate(310deg);
-      left: -30px;
+    @media (max-width: $tablet-width) {
+      left: -52px;
     }
+  }
+
+  &::after {
+    transform: rotate(310deg);
+    left: -30px;
   }
 }
 

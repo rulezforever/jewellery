@@ -82,31 +82,32 @@
 
 .follow__pic1 {
   grid-area: pic1;
-  background: url("../../img/pic1-desktop@1x.jpg");
+  background: url("../img/pic1-desktop@1x.jpg");
+  background-color: $background2;
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background: url("../../img/pic1-desktop@2x.jpg");
+    background: url("../img/pic1-desktop@2x.jpg");
     background-size: cover;
   }
 
   @media (max-width: $tablet-width) {
-    background: url("../../img/pic1-tablet@1x.jpg");
+    background: url("../img/pic1-tablet@1x.jpg");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background: url("../../img/pic1-tablet@2x.jpg");
+      background: url("../img/pic1-tablet@2x.jpg");
       background-size: cover;
     }
   }
 
   @media (max-width: $mobile-width) {
-    background: url("../../img/pic1-mobile@1x.jpg");
+    background: url("../img/pic1-mobile@1x.jpg");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background: url("../../img/pic1-mobile@2x.jpg");
+      background: url("../img/pic1-mobile@2x.jpg");
       background-size: cover;
     }
   }
@@ -114,31 +115,32 @@
 
 .follow__pic2 {
   grid-area: pic2;
-  background: url("../../img/pic2-desktop@1x.jpg");
+  background: url("../img/pic2-desktop@1x.jpg");
+  background-color: $background2;
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background: url("../../img/pic2-desktop@2x.jpg");
+    background: url("../img/pic2-desktop@2x.jpg");
     background-size: cover;
   }
 
   @media (max-width: $tablet-width) {
-    background: url("../../img/pic2-tablet@1x.jpg");
+    background: url("../img/pic2-tablet@1x.jpg");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background: url("../../img/pic2-tablet@2x.jpg");
+      background: url("../img/pic2-tablet@2x.jpg");
       background-size: cover;
     }
   }
 
   @media (max-width: $mobile-width) {
-    background: url("../../img/pic2-mobile@1x.jpg");
+    background: url("../img/pic2-mobile@1x.jpg");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background: url("../../img/pic2-mobile@2x.jpg");
+      background: url("../img/pic2-mobile@2x.jpg");
       background-size: cover;
     }
   }
@@ -146,31 +148,32 @@
 
 .follow__pic3 {
   grid-area: pic3;
-  background: url("../../img/pic3-desktop@1x.jpg");
+  background: url("../img/pic3-desktop@1x.jpg");
+  background-color: $background2;
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background: url("../../img/pic3-desktop@2x.jpg");
+    background: url("../img/pic3-desktop@2x.jpg");
     background-size: cover;
   }
 
   @media (max-width: $tablet-width) {
-    background: url("../../img/pic3-tablet@1x.jpg");
+    background: url("../img/pic3-tablet@1x.jpg");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background: url("../../img/pic3-tablet@2x.jpg");
+      background: url("../img/pic3-tablet@2x.jpg");
       background-size: cover;
     }
   }
 
   @media (max-width: $mobile-width) {
-    background: url("../../img/pic3-mobile@1x.jpg");
+    background: url("../img/pic3-mobile@1x.jpg");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background: url("../../img/pic3-mobile@2x.jpg");
+      background: url("../img/pic3-mobile@2x.jpg");
       background-size: cover;
     }
   }
@@ -178,21 +181,22 @@
 
 .follow__pic4 {
   grid-area: pic4;
-  background: url("../../img/pic4-desktop@1x.jpg");
+  background: url("../img/pic4-desktop@1x.jpg");
+  background-color: $background2;
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background: url("../../img/pic4-desktop@2x.jpg");
+    background: url("../img/pic4-desktop@2x.jpg");
     background-size: cover;
   }
 
   @media (max-width: $tablet-width) {
-    background: url("../../img/pic4-tablet@1x.jpg");
+    background: url("../img/pic4-tablet@1x.jpg");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background: url("../../img/pic4-tablet@2x.jpg");
+      background: url("../img/pic4-tablet@2x.jpg");
       background-size: cover;
     }
   }
@@ -204,32 +208,33 @@
 
 .follow__pic5 {
   grid-area: pic5;
-  background: url("../../img/pic5-desktop@1x.jpg");
+  background: url("../img/pic5-desktop@1x.jpg");
+  background-color: $background2;
   background-repeat: no-repeat;
   background-size: cover;
 
 
   @media (min-resolution: 2dppx) {
-    background: url("../../img/pic5-desktop@2x.jpg");
+    background: url("../img/pic5-desktop@2x.jpg");
     background-size: cover;
   }
 
   @media (max-width: $tablet-width) {
-    background: url("../../img/pic5-tablet@1x.jpg");
+    background: url("../img/pic5-tablet@1x.jpg");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background: url("../../img/pic5-tablet@2x.jpg");
+      background: url("../img/pic5-tablet@2x.jpg");
       background-size: cover;
     }
   }
 
   @media (max-width: $mobile-width) {
-    background: url("../../img/pic5-mobile@1x.jpg");
+    background: url("../img/pic5-mobile@1x.jpg");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background: url("../../img/pic5-mobile@2x.jpg");
+      background: url("../img/pic5-mobile@2x.jpg");
       background-size: cover;
     }
   }
@@ -237,21 +242,22 @@
 
 .follow__pic6 {
   grid-area: pic6;
-  background: url("../../img/pic6-desktop@1x.jpg");
+  background: url("../img/pic6-desktop@1x.jpg");
+  background-color: $background2;
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background: url("../../img/pic6-desktop@2x.jpg");
+    background: url("../img/pic6-desktop@2x.jpg");
     background-size: cover;
   }
 
   @media (max-width: $tablet-width) {
-    background: url("../../img/pic6-tablet@1x.jpg");
+    background: url("../img/pic6-tablet@1x.jpg");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background: url("../../img/pic6-tablet@2x.jpg");
+      background: url("../img/pic6-tablet@2x.jpg");
       background-size: cover;
     }
   }
@@ -263,31 +269,32 @@
 
 .follow__pic7 {
   grid-area: pic7;
-  background: url("../../img/pic7-desktop@1x.jpg");
+  background: url("../img/pic7-desktop@1x.jpg");
+  background-color: $background2;
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background: url("../../img/pic7-desktop@2x.jpg");
+    background: url("../img/pic7-desktop@2x.jpg");
     background-size: cover;
   }
 
   @media (max-width: $tablet-width) {
-    background: url("../../img/pic7-tablet@1x.jpg");
+    background: url("../img/pic7-tablet@1x.jpg");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background: url("../../img/pic7-tablet@2x.jpg");
+      background: url("../img/pic7-tablet@2x.jpg");
       background-size: cover;
     }
   }
 
   @media (max-width: $mobile-width) {
-    background: url("../../img/pic7-mobile@1x.jpg");
+    background: url("../img/pic7-mobile@1x.jpg");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background: url("../../img/pic7-mobile@2x.jpg");
+      background: url("../img/pic7-mobile@2x.jpg");
       background-size: cover;
     }
   }

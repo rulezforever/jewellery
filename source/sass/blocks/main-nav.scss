@@ -7,17 +7,17 @@
   @media (max-width: $mobile-width) {
     min-height: 92px;
   }
+}
 
-  &--opened,
-  &--nojs {
-    @media (max-width: $tablet-width) {
-      background: $background2;
-      min-height: 778px;
-    }
+.main-nav--opened,
+.main-nav--nojs {
+  @media (max-width: $tablet-width) {
+    background: $background2;
+    min-height: 778px;
+  }
 
-    @media (max-width: $mobile-width) {
-      min-height: 684px;
-    }
+  @media (max-width: $mobile-width) {
+    min-height: 684px;
   }
 }
 
@@ -422,5 +422,3 @@
     fill: $white;
   }
 }
-
-// .main-nav--opened .main-nav__top-section

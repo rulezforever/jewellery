@@ -5,25 +5,26 @@
   box-sizing: border-box;
   padding-top: 95px;
   padding-left: 20px;
-  background: url("../../img/all-jewellery-desktop@1x.jpg");
+  background: url("../img/all-jewellery-desktop@1x.jpg");
+  background-color: $background2;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 261px;
   margin-bottom: 80px;
 
   @media (min-resolution: 2dppx) {
-    background: url("../../img/all-jewellery-desktop@2x.jpg");
+    background: url("../img/all-jewellery-desktop@2x.jpg");
     background-size: cover;
   }
 
   @media (max-width: $tablet-width) {
-    background: url("../../img/all-jewellery-tablet@1x.jpg");
+    background: url("../img/all-jewellery-tablet@1x.jpg");
     background-size: cover;
     margin-bottom: 52px;
     padding-left: 0;
 
     @media (min-resolution: 2dppx) {
-      background: url("../../img/all-jewellery-tablet@2x.jpg");
+      background: url("../img/all-jewellery-tablet@2x.jpg");
       background-size: cover;
     }
   }
@@ -31,11 +32,11 @@
   @media (max-width: $mobile-width) {
     padding-top: 80px;
     margin-bottom: 40px;
-    background: url("../../img/all-jewellery-mobile@1x.jpg");
+    background: url("../img/all-jewellery-mobile@1x.jpg");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background: url("../../img/all-jewellery-mobile@2x.jpg");
+      background: url("../img/all-jewellery-mobile@2x.jpg");
       background-size: cover;
     }
   }
@@ -49,15 +50,6 @@
 
   color: $white;
   margin: 0;
-
-  @media (max-width: $tablet-width) {
-    // margin-right: 17px;
-  }
-
-  @media (max-width: $mobile-width) {
-    // @include font-set(38px, 49.4px, 700);
-    // margin-right: 0;
-  }
 }
 
 .all__slogan {
