@@ -92,7 +92,8 @@
       <section class="catalog wrapper">
         <div class="catalog__wrapper">
           <button type="button" class="catalog__filter-button">Filter</button>
-          <aside class="catalog__aside">
+          <aside class="catalog__aside modal-filter">
+            <div class="modal-filter-wrapper">
             <form class="catalog__form" method="get" action="https://echo.htmlacademy.ru">
               <ul class="catalog__form-list">
                 <li class="catalog__form-item catalog__form-item--product catalog__form-item--nojs">
@@ -175,7 +176,9 @@
                 <button type="submit" class="catalog__form-button">Apply</button>
                 <button type="reset" class="catalog__form-button-clear">Clear All</button>
               </div>
+              <button class="modal-filter-close" tabindex="0" type="button" id="filter-close" aria-label="Close"></button>
             </form>
+          </div>
           </aside>
           <ul class="catalog__list">
             <li class="catalog__item">
@@ -521,94 +524,6 @@
       </div>
     </footer>
   </div>
-  <dialog id="modal-filter" class="modal-filter">
-    <div class="modal-filter-wrapper">
-      <form class="catalog__form" method="get" action="https://echo.htmlacademy.ru">
-        <ul class="catalog__form-list">
-          <li class="catalog__form-item catalog__form-item--product catalog__form-item--nojs">
-            <div class="catalog__section catalog__section--product">
-              <p class="catalog__section-name">Product</p>
-              <button class="catalog__btn" type="button" aria-label="Open/Close"></button>
-            </div>
-            <ul class="catalog__section-list catalog__section-list--product">
-              <li class="catalog__section-item">
-                <input class="visually-hidden" type="checkbox" name="necklaces" id="necklaces-dialog" checked>
-                <label class="catalog__section-label" for="necklaces-dialog">Necklaces</label>
-              </li>
-              <li class="catalog__section-item">
-                <input class="visually-hidden" type="checkbox" name="chokers" id="chokers-dialog" checked>
-                <label class="catalog__section-label" for="chokers-dialog">Chokers</label>
-              </li>
-              <li class="catalog__section-item">
-                <input class=" visually-hidden" type="checkbox" name="rings" id="rings-dialog">
-                <label class="catalog__section-label" for="rings-dialog">Rings</label>
-              </li>
-              <li class="catalog__section-item">
-                <input class=" visually-hidden" type="checkbox" name="earrings" id="earrings-dialog" checked>
-                <label class="catalog__section-label" for="earrings-dialog">Earrings</label>
-              </li>
-            </ul>
-          </li>
-          <li class="catalog__form-item catalog__form-item--material catalog__form-item--nojs">
-            <div class="catalog__section catalog__section--material">
-              <p class="catalog__section-name">Material</p>
-              <button class="catalog__btn" type="button" aria-label="Open/Close"></button>
-            </div>
-            <ul class="catalog__section-list catalog__section-list--material">
-              <li class="catalog__section-item">
-                <input class="visually-hidden" type="checkbox" name="gold" id="gold-dialog" checked>
-                <label class="catalog__section-label" for="gold-dialog">Gold</label>
-              </li>
-              <li class="catalog__section-item">
-                <input class="visually-hidden" type="checkbox" name="silver" id="silver-dialog">
-                <label class="catalog__section-label" for="silver-dialog">Silver</label>
-              </li>
-            </ul>
-          </li>
-          <li class="catalog__form-item catalog__form-item--collection catalog__form-item--nojs">
-            <div class="catalog__section catalog__section--collection">
-              <p class="catalog__section-name">Collection</p>
-              <button class="catalog__btn" type="button" aria-label="Open/Close"></button>
-            </div>
-            <ul class="catalog__section-list catalog__section-list--collection">
-              <li class="catalog__section-item">
-                <input class="visually-hidden" type="checkbox" name="pink-flamingo" id="pink-flamingo-dialog" checked>
-                <label class="catalog__section-label" for="pink-flamingo-dialog">Pink flamingo</label>
-              </li>
-              <li class="catalog__section-item">
-                <input class="visually-hidden" type="checkbox" name="dreams" id="dreams-dialog">
-                <label class="catalog__section-label" for="dreams-dialog">Dreams</label>
-              </li>
-            </ul>
-          </li>
-          <li class="catalog__form-item catalog__form-item--price catalog__form-item--nojs ">
-            <div class="catalog__section catalog__section--price">
-              <p class="catalog__section-name">Price</p>
-              <button class="catalog__btn" type="button" aria-label="Open/Close"></button>
-            </div>
-            <div class="catalog__form-filter">
-              <div class="catalog__form-controls">
-                <div class="catalog__form-scale">
-                  <div class="catalog__form-bar"></div>
-                </div>
-                <div class="catalog__form-toggle catalog__form-toggle-min" tabindex="0" aria-label="min"></div>
-                <div class="catalog__form-toggle catalog__form-toggle-max" tabindex="0" aria-label="max"></div>
-                <div class="catalog__form-price">
-                  <p>$ 55</p>
-                  <p>$ 155</p>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <div class="catalog__form-button-block">
-          <button type="submit" class="catalog__form-button">Apply</button>
-          <button type="button" class="catalog__form-button-clear">Clear All</button>
-        </div>
-      </form>
-      <button class="modal-filter-close" tabindex="0" type="button" id="filter-close" aria-label="Close"></button>
-    </div>
-  </dialog>
   <dialog id="modal" class="modal modal-login">
     <div class="modal__wrapper">
       <picture>

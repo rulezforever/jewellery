@@ -217,49 +217,4 @@ if (itemProduct) {
     itemPrice.classList.toggle('catalog__form-item--nojs');
   });
 }
-
-
-// --------modal form-------------
-
-const modalDialog = document.querySelector('.modal-filter');
-if (modalDialog) {
-  const modalitemProduct = modalDialog.querySelector('.catalog__form-item--product');
-  const modalproductSection = modalDialog.querySelector('.catalog__section--product');
-  const modalitemMaterial = modalDialog.querySelector('.catalog__form-item--material');
-  const modalmaterialSection = modalDialog.querySelector('.catalog__section--material');
-  const modalitemCollection = modalDialog.querySelector('.catalog__form-item--collection');
-  const modalcollectionSection = modalDialog.querySelector('.catalog__section--collection');
-  const modalitemPrice = modalDialog.querySelector('.catalog__form-item--price');
-  const modalpriceSection = modalDialog.querySelector('.catalog__section--price');
-
-
-  modalitemProduct.classList.remove('catalog__form-item--opened');
-  modalitemProduct.classList.remove('catalog__form-item--nojs');
-  modalitemMaterial.classList.remove('catalog__form-item--opened');
-  modalitemMaterial.classList.remove('catalog__form-item--nojs');
-  modalitemCollection.classList.remove('catalog__form-item--opened');
-  modalitemCollection.classList.remove('catalog__form-item--nojs');
-  modalitemPrice.classList.remove('catalog__form-item--opened');
-  modalitemPrice.classList.remove('catalog__form-item--nojs');
-
-  modalproductSection.addEventListener('click', function() {
-    modalitemProduct.classList.toggle('catalog__form-item--opened');
-    modalitemProduct.classList.toggle('catalog__form-item--nojs');
-  });
-
-  modalmaterialSection.addEventListener('click', function() {
-    modalitemMaterial.classList.toggle('catalog__form-item--opened');
-    modalitemMaterial.classList.toggle('catalog__form-item--nojs');
-  });
-
-  modalcollectionSection.addEventListener('click', function() {
-    modalitemCollection.classList.toggle('catalog__form-item--opened');
-    modalitemCollection.classList.toggle('catalog__form-item--nojs');
-  });
-
-  modalpriceSection.addEventListener('click', function() {
-    modalitemPrice.classList.toggle('catalog__form-item--opened');
-    modalitemPrice.classList.toggle('catalog__form-item--nojs');
-  });
-}
 })();

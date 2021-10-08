@@ -1,8 +1,8 @@
 .modal {
   position: fixed;
-  top: 137px;
-  right: -16px;
-  left: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   margin: auto;
   padding: 0;
   background-color: $background-basic;
@@ -210,23 +210,25 @@
 }
 
 .modal-filter {
-  position: fixed;
-  top: 0;
-  left: 0;
-  margin: auto;
-  width: 768px;
-  min-height: 957px;
-  max-width: 100%;
-  max-height: 100%;
-  box-sizing: border-box;
-  display: none;
-  z-index: 3;
-  border: none;
-  overflow: auto;
+  display: block;
 
   @media (max-width: $tablet-width) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 768px;
+    min-height: 957px;
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+    display: none;
+    z-index: 3;
+    border: none;
+    overflow: auto;
     padding: 0;
     padding-top: 25px;
+    background-color: $white;
   }
 
   @media (max-width: $mobile-width) {
@@ -243,45 +245,46 @@
   display: flex;
 }
 
-.modal-filter-wrapper {
-  padding-bottom: 10px;
-}
-
 .modal-filter-close {
   border: none;
   outline: none;
   background-color: transparent;
-  top: 8px;
-  right: 0;
-  cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    top: 8px;
+    right: 0;
+    cursor: pointer;
 
 
-  &:focus {
-    &::before,
-    &::after {
-      border: 1px solid $black;
+    &:focus {
+      &::before,
+      &::after {
+        border: 1px solid $black;
+      }
     }
-  }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 10px;
-    right: 330px;
-    width: 32px;
-    height: 32px;
-    background: url("../img/icons/close.svg");
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      right: 330px;
+      width: 32px;
+      height: 32px;
+      background: url("../img/icons/close.svg");
 
-    @media (max-width: $mobile-width) {
-      top: 60px;
-      right: 15px;
+      @media (max-width: $mobile-width) {
+        top: 60px;
+        right: 15px;
+      }
     }
   }
 }
 
 
 .modal-filter .modal-filter-wrapper {
-  width: 442px;
+  @media (max-width: $tablet-width) {
+    width: 442px;
+  }
 
   @media (max-width: $mobile-width) {
     width: 270px;
@@ -289,20 +292,28 @@
 }
 
 .modal-filter .catalog__section-name {
-  @include font-set(18px, 23px, 500);
+  @media (max-width: $tablet-width) {
+    @include font-set(18px, 23px, 500);
+  }
 }
 
 .modal-filter .catalog__section-label {
-  @include font-set(16px, 21px, 500);
+  @media (max-width: $tablet-width) {
+    @include font-set(16px, 21px, 500);
+  }
 }
 
 .modal-filter .catalog__form-list {
-  border: none;
-  margin-bottom: 25px;
+  @media (max-width: $tablet-width) {
+    border: none;
+    margin-bottom: 25px;
+  }
 }
 
 .modal-filter .catalog__section {
-  padding: 35px 22px;
+  @media (max-width: $tablet-width) {
+    padding: 35px 22px;
+  }
 
   @media (max-width: $mobile-width) {
     padding: 24px 22px;
@@ -310,7 +321,9 @@
 }
 
 .modal-filter .catalog__form-controls {
-  padding-left: 40px;
+  @media (max-width: $tablet-width) {
+    padding-left: 40px;
+  }
 
   @media (max-width: $mobile-width) {
     padding-top: 10px;
@@ -319,7 +332,9 @@
 }
 
 .modal-filter .catalog__form-scale {
-  width: 305px;
+  @media (max-width: $tablet-width) {
+    width: 305px;
+  }
 
   @media (max-width: $mobile-width) {
     width: 240px;
@@ -328,13 +343,17 @@
 }
 
 .modal-filter .catalog__form-toggle {
-  width: 18px;
-  height: 18px;
+  @media (max-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .modal-filter .catalog__form-toggle-min {
-  top: -10px;
-  left: 85px;
+  @media (max-width: $tablet-width) {
+    top: -10px;
+    left: 85px;
+  }
 
   @media (max-width: $mobile-width) {
     top: 0;
@@ -343,8 +362,10 @@
 }
 
 .modal-filter .catalog__form-toggle-max {
-  top: -10px;
-  left: 260px;
+  @media (max-width: $tablet-width) {
+    top: -10px;
+    left: 260px;
+  }
 
   @media (max-width: $mobile-width) {
     top: 0;
@@ -353,12 +374,16 @@
 }
 
 .modal-filter .catalog__form-price p {
-  @include font-set(16px, 21px, 500);
+  @media (max-width: $tablet-width) {
+    @include font-set(16px, 21px, 500);
+  }
 }
 
 .modal-filter .catalog__form-price {
-  width: 215px;
-  padding-left: 36px;
+  @media (max-width: $tablet-width) {
+    width: 215px;
+    padding-left: 36px;
+  }
 
   @media (max-width: $mobile-width) {
     width: 175px;
@@ -367,12 +392,16 @@
 }
 
 .modal-filter .catalog__form-filter {
-  margin-bottom: 45px;
+  @media (max-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .modal-filter .catalog__form-button-block {
-  padding-left: 31px;
-  width: 362px;
+  @media (max-width: $tablet-width) {
+    padding-left: 31px;
+    width: 362px;
+  }
 
   @media (max-width: $mobile-width) {
     padding-left: 20px;
@@ -382,9 +411,11 @@
 }
 
 .modal-filter .catalog__section-list {
-  gap: 17px;
-  margin-bottom: 26px;
-  padding-left: 35px;
+  @media (max-width: $tablet-width) {
+    gap: 17px;
+    margin-bottom: 26px;
+    padding-left: 35px;
+  }
 
   @media (max-width: $mobile-width) {
     padding-left: 29px;

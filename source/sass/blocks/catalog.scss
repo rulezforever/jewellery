@@ -39,7 +39,11 @@
   width: 250px;
 
   @media (max-width: $tablet-width) {
-    display: none;
+    width: 768px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 320px;
   }
 }
 
