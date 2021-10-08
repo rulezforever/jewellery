@@ -60,6 +60,10 @@
 .modal__form {
   padding: 0 45px;
 
+  @media (max-width: $tablet-width) {
+    padding: 0 51px;
+  }
+
   @media (max-width: $mobile-width) {
     padding: 0 15px;
   }
@@ -103,6 +107,8 @@
   margin-bottom: 45px;
 
   @media (max-width: $mobile-width) {
+    width: 58%;
+    margin-left: 42%;
     margin-bottom: 34px;
   }
 
@@ -138,9 +144,16 @@
     height: 2px;
     background-color: $black2;
 
+    @media (max-width: $tablet-width) {
+      width: 25px;
+      height: 3px;
+    }
+
     @media (max-width: $mobile-width) {
       top: 20px;
       right: 15px;
+      width: 18px;
+      height: 2px;
     }
   }
 
