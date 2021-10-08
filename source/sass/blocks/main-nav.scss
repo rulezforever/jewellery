@@ -13,11 +13,11 @@
 .main-nav--nojs {
   @media (max-width: $tablet-width) {
     background: $background2;
-    min-height: 778px;
+    min-height: 100vh;
   }
 
   @media (max-width: $mobile-width) {
-    min-height: 684px;
+    min-height: 100vh;
   }
 }
 
