@@ -83,6 +83,13 @@
   cursor: pointer;
   position: relative;
 
+  &:focus {
+    &::before {
+      border-bottom: 1px solid $black2;
+      border-left: 1px solid $black2;
+    }
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -127,14 +134,14 @@
 .faq__item {
   box-sizing: border-box;
   padding: 39px;
+  cursor: pointer;
+  pointer-events: auto;
 
   @media (max-width: $tablet-width) {
     padding: 43px 48px;
   }
 
   @media (max-width: $mobile-width) {
-    cursor: pointer;
-    pointer-events: auto;
     padding: 18px;
   }
 

@@ -7,13 +7,15 @@
   background: url("../img/intro-desktop@1x.jpg");
   background-color: $background2;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 463px;
   min-height: 463px;
   margin-bottom: 120px;
 
+
   @media (min-resolution: 2dppx) {
     background: url("../img/intro-desktop@2x.jpg");
-    background-size: cover;
+    background-size: 100% 463px;
+    // background-size: 1366px 463px;
   }
 
   @media (max-width: $tablet-width) {
@@ -31,11 +33,15 @@
     padding-top: 190px;
     margin-bottom: 60px;
     background: url("../img/intro-mobile@1x.jpg");
-    background-size: cover;
+    background-size: 100% 463px;
+    background-position: center;
+    background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
       background: url("../img/intro-mobile@2x.jpg");
-      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% 463px;
     }
   }
 }

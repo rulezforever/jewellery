@@ -77,6 +77,17 @@
   background-color: transparent;
   cursor: pointer;
   position: relative;
+
+  &:focus {
+    &::before {
+      background-color: $black2;
+    }
+
+    &::after {
+      border-bottom: 1px solid $black2;
+      border-right: 1px solid $black2;
+    }
+  }
 }
 
 .new__button--left,

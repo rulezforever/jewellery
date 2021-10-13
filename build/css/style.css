@@ -208,8 +208,7 @@ img {
 
 .page-footer__wrapper {
   display: flex;
-  flex-wrap: wrap;
-  padding-left: 20px; }
+  flex-wrap: wrap; }
   @media (max-width: 1023px) {
     .page-footer__wrapper {
       padding-left: 45px; } }
@@ -284,7 +283,10 @@ img {
   font-weight: 500;
   padding: 11px 0;
   padding-right: 45px;
-  position: relative; }
+  position: relative;
+  outline: none;
+  border: none;
+  background: transparent; }
   .page-footer__link::after {
     content: "";
     position: absolute;
@@ -730,8 +732,7 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  margin-bottom: 90px;
-  margin-left: 20px; }
+  margin-bottom: 90px; }
   @media (max-width: 1023px) {
     .blog {
       margin-bottom: 42px;
@@ -835,7 +836,7 @@ img {
 .blog__item--three {
   display: grid;
   grid-area: block3;
-  row-gap: 30px;
+  row-gap: 2.3vw;
   column-gap: 0;
   grid-template-columns: 20.9vw 20.9vw;
   grid-template-rows: 22vw 22vw; }
@@ -1097,13 +1098,13 @@ img {
   background: url("../img/intro-desktop@1x.jpg");
   background-color: #a87b62;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 463px;
   min-height: 463px;
   margin-bottom: 120px; }
   @media (min-resolution: 2dppx) {
     .promo {
       background: url("../img/intro-desktop@2x.jpg");
-      background-size: cover; } }
+      background-size: 100% 463px; } }
   @media (max-width: 1023px) {
     .promo {
       background: url("../img/intro-tablet@1x.jpg");
@@ -1118,11 +1119,15 @@ img {
       padding-top: 190px;
       margin-bottom: 60px;
       background: url("../img/intro-mobile@1x.jpg");
-      background-size: cover; } }
+      background-size: 100% 463px;
+      background-position: center;
+      background-repeat: no-repeat; } }
   @media (max-width: 767px) and (min-resolution: 2dppx) {
     .promo {
       background: url("../img/intro-mobile@2x.jpg");
-      background-size: cover; } }
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% 463px; } }
 
 .promo__title {
   font-size: 45px;
@@ -1235,6 +1240,11 @@ img {
   background-color: transparent;
   cursor: pointer;
   position: relative; }
+  .new__button:focus::before {
+    background-color: #1d1613; }
+  .new__button:focus::after {
+    border-bottom: 1px solid #1d1613;
+    border-right: 1px solid #1d1613; }
 
 .new__button--left::before,
 .new__button--right::before {
@@ -1858,6 +1868,9 @@ img {
   background-color: transparent;
   cursor: pointer;
   position: relative; }
+  .faq__button:focus::before {
+    border-bottom: 1px solid #1d1613;
+    border-left: 1px solid #1d1613; }
   .faq__button::before {
     content: "";
     position: absolute;
@@ -1899,14 +1912,14 @@ img {
 
 .faq__item {
   box-sizing: border-box;
-  padding: 39px; }
+  padding: 39px;
+  cursor: pointer;
+  pointer-events: auto; }
   @media (max-width: 1023px) {
     .faq__item {
       padding: 43px 48px; } }
   @media (max-width: 767px) {
     .faq__item {
-      cursor: pointer;
-      pointer-events: auto;
       padding: 18px; } }
   .faq__item:not(:last-of-type) {
     border-bottom: 1px solid #a87b62; }
@@ -2235,7 +2248,7 @@ img {
   @media (max-width: 1023px) {
     .catalog__list {
       width: 89vw;
-      gap: 3.9vw; } }
+      gap: 4vw; } }
   @media (max-width: 767px) {
     .catalog__list {
       width: 91vw;
@@ -2246,7 +2259,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-bottom: 3px; }
+  margin-bottom: 10px; }
   @media (max-width: 767px) {
     .catalog__item {
       margin-bottom: 0; } }
@@ -2264,6 +2277,7 @@ img {
   @media (max-width: 1023px) {
     .catalog__nav-buttons {
       padding-left: 0;
+      padding-top: 28px;
       width: 89vw;
       justify-content: space-between;
       margin-bottom: 38px; } }
@@ -2437,8 +2451,8 @@ img {
     .catalog__img {
       width: 27vw;
       height: 27vw;
-      margin-bottom: 21px; } }
-  @media (max-width: 1023px) {
+      margin-bottom: 15px; } }
+  @media (max-width: 767px) {
     .catalog__img {
       width: 40.5vw;
       height: 42vw;
@@ -2470,6 +2484,9 @@ img {
   background-color: transparent;
   cursor: pointer;
   position: relative; }
+  .catalog__btn:focus::before {
+    border-bottom: 1px solid #1d1613;
+    border-left: 1px solid #1d1613; }
   .catalog__btn::before {
     content: "";
     position: absolute;
@@ -2495,6 +2512,9 @@ img {
   height: 15px;
   border: 1px solid #a87b62;
   box-sizing: border-box; }
+
+.catalog__section-list input:focus + label::before {
+  outline: 1px solid #1d1613; }
 
 .catalog__section-list input:checked + label::before {
   content: "";

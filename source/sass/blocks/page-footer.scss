@@ -17,7 +17,6 @@
 .page-footer__wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 20px;
 
   @media (max-width: $tablet-width) {
     padding-left: 45px;
@@ -100,6 +99,9 @@
   padding: 11px 0;
   padding-right: 45px;
   position: relative;
+  outline: none;
+  border: none;
+  background: transparent;
 
   &::after {
     content: "";

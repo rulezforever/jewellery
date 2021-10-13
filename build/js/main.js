@@ -174,8 +174,8 @@ if (swiperClass) {
         },
 
     navigation: {
-      nextEl: '.new__button--left',
-      prevEl: '.new__button--right',
+      nextEl: '.new__button--right',
+      prevEl: '.new__button--left',
     },
   });
 }
