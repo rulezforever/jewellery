@@ -5,15 +5,23 @@
 const navMain = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.main-nav__toggle');
 
+const promo = document.querySelector('.promo');
+const pageWrapper = document.querySelector('.page-wrapper');
+
 navMain.classList.remove('main-nav--nojs');
 navMain.classList.remove('main-nav--opened');
 
 navToggle.addEventListener('click', function () {
   navMain.classList.toggle('main-nav--opened');
+
   if (navMain.classList.contains('main-nav--opened')) {
-    pageBody.style.overflow = 'hidden';
+    // pageBody.style.overflow = 'hidden';
+    promo.style.display = 'none';
+    pageWrapper.style.display = 'none';
   } else {
-    pageBody.style.overflow = 'auto';
+    promo.style.display = 'flex';
+    pageWrapper.style.display = 'block';
+    // pageBody.style.overflow = 'auto';
   }
 });
 
@@ -160,6 +168,8 @@ if (modalFilter) {
 // -------------------Swiper-----------------------
 
 const swiperClass = document.querySelector('.swiper');
+var menu = ['1', '2', '3'];
+const className = document.querySelector('.new__pagination-item')
 if (swiperClass) {
   const swiper = new Swiper('.swiper', {
 
@@ -177,8 +187,24 @@ if (swiperClass) {
       nextEl: '.new__button--right',
       prevEl: '.new__button--left',
     },
+
+    pagination: {
+      el: '.new__pagination-list',
+      clickable: true,
+      type: 'bullets',
+
+      // bulletClass: '.new__pagination-item',
+      // bulletActiveClass: '.new__pagination-item--current',
+      // bulletElement: 'li',
+
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (menu[index]) + '</span>';
+        // return `<span class="dot swiper-pagination-bullet">${index+1}</span>`;
+      },
+    },
   });
 }
+
 
 
 //-------------------Catalog form--------------
