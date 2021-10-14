@@ -1,10 +1,10 @@
 .swiper {
-  width: 88vw;
+  width: 86vw;
   height: 29.4vw;
   padding-left: 2vw;
 
   @media (max-width: $tablet-width) {
-    width: 91vw;
+    width: 88vw;
     height: 58vw;
     padding-left: 0;
   }
@@ -12,15 +12,5 @@
   @media (max-width: $mobile-width) {
     width: 91vw;
     height: 80vw;
-  }
-}
-
-.swiper__card {
-  &:not(:nth-of-type(4)) {
-    margin-right: 30px;
-
-    @media (max-width: $mobile-width) {
-      margin-right: 0;
-    }
   }
 }

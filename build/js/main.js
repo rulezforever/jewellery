@@ -168,7 +168,7 @@ if (modalFilter) {
 // -------------------Swiper-----------------------
 
 const swiperClass = document.querySelector('.swiper');
-var menu = ['1', '2', '3'];
+var menu = ['1', '2', '3', '4', '5', '6'];
 const className = document.querySelector('.new__pagination-item')
 if (swiperClass) {
   const swiper = new Swiper('.swiper', {
@@ -180,6 +180,7 @@ if (swiperClass) {
                 },
           1024: {
             slidesPerView: 4,
+            spaceBetween: 30
           }
         },
 
