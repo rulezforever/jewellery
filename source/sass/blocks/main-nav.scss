@@ -347,11 +347,12 @@
     @include font-set(18px, 23px, 500);
     display: none;
     color: $white;
-    padding-left: 45px;
+    margin-left: 45px;
+    width: 50px;
   }
 
   @media (max-width: $mobile-width) {
-    padding-left: 15px;
+    margin-left: 15px;
   }
 }
 
