@@ -190,15 +190,9 @@ if (swiperClass) {
     pagination: {
       el: '.new__pagination-list',
       clickable: true,
-      type: 'bullets',
-
-      // bulletClass: '.new__pagination-item',
-      // bulletActiveClass: '.new__pagination-item--current',
-      // bulletElement: 'li',
 
       renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (menu[index]) + '</span>';
-        // return `<span class="dot swiper-pagination-bullet">${index+1}</span>`;
+        return '<span class="' + className + '">' + (index + 1) + "</span>";
       },
     },
   });
