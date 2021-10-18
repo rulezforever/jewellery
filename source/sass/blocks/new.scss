@@ -4,7 +4,6 @@
   justify-content: center;
   align-content: center;
   margin-bottom: 128px;
-  // padding-left: 19px;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 79px;
@@ -206,6 +205,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
+  cursor: pointer;
 
   @media (max-width: $tablet-width) {
     gap: 13px;

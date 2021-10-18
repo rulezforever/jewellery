@@ -15,10 +15,10 @@
   }
 }
 
-// .swiper-slide-wrapper {
-//   display: flex;
-//   flex-wrap: wrap;
-//   gap: 30px;
-//   flex-direction: column;
-//   justify-content: space-between;
-// }
+.swiper-pag-bullet {
+  background: transparent;
+}
+
+.swiper-pag-bullet-active {
+  background: transparent;
+}

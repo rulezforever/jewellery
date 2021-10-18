@@ -1365,7 +1365,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px; }
+  gap: 15px;
+  cursor: pointer; }
   @media (max-width: 1023px) {
     .new__pagination-list {
       gap: 13px; } }
@@ -2576,6 +2577,12 @@ img {
     .swiper {
       width: 91vw;
       height: 80vw; } }
+
+.swiper-pag-bullet {
+  background: transparent; }
+
+.swiper-pag-bullet-active {
+  background: transparent; }
 
 /**
  * Swiper 7.0.8

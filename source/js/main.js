@@ -187,6 +187,8 @@ if (swiperClass) {
         spaceBetween: 30,
         pagination: {
           clickable: true,
+          bulletClass: '.swiper-pag-bullet',
+          bulletActiveClass: '.swiper-pag-bullet-active',
           renderBullet: function (index, className) {
             return '<span class="' + className + '">' + (index + 1) + "</span>";
             },
