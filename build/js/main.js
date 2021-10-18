@@ -179,7 +179,30 @@ if (swiperClass) {
       320: {
         slidesPerView: 2,
         slidesPerGroup: 2,
-        spaceBetween: 30
+        spaceBetween: 30,
+        pagination: {
+          type: 'fraction',
+          el: '.new__pagination-list-mobile',
+          renderFraction: function(currentClass, totalClass) {
+
+           return '<span class="swiper-pagination-current">' + currentClass + "</span>"
+            + " of " +
+            '<span class="swiper-pagination-total">' + totalClass + "</span>";
+          },
+        },
+      },
+      768: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 30,
+        pagination: {
+          clickable: true,
+          bulletClass: '.swiper-pag-bullet',
+          bulletActiveClass: '.swiper-pag-bullet-active',
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+            },
+        },
       },
       1024: {
         slidesPerView: 4,

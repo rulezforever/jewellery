@@ -2579,10 +2579,12 @@ img {
       height: 80vw; } }
 
 .swiper-pag-bullet {
-  background: transparent; }
+  background: transparent;
+  color: #9b9997; }
 
 .swiper-pag-bullet-active {
-  background: transparent; }
+  background: transparent;
+  color: #1d1613; }
 
 /**
  * Swiper 7.0.8
