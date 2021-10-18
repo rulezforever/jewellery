@@ -168,36 +168,33 @@ if (modalFilter) {
 const swiperClass = document.querySelector('.swiper');
 if (swiperClass) {
   const swiper = new Swiper('.swiper', {
-
+    navigation: {
+      nextEl: '.new__button--right',
+      prevEl: '.new__button--left',
+    },
+    pagination: {
+      el: '.new__pagination-list',
+    },
     breakpoints: {
-          320: {
-                  slidesPerView: 2,
-                  spaceBetween: 30
-                },
-          1024: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-
-            navigation: {
-              nextEl: '.new__button--right',
-              prevEl: '.new__button--left',
+      320: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 30
+      },
+      1024: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        spaceBetween: 30,
+        pagination: {
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
             },
-
-            pagination: {
-              el: '.new__pagination-list',
-              clickable: true,
-
-              renderBullet: function (index, className) {
-                return '<span class="' + className + '">' + (index + 1) + "</span>";
-              },
-            },
-          }
         },
-
-
+      }
+    }
   });
 }
-
 
 
 //-------------------Catalog form--------------
